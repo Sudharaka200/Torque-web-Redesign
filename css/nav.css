@@ -1,0 +1,160 @@
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Nav Bar Styling */
+        .nav-test {
+            background-color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin: 20px;
+        }
+
+        /* Logo Area */
+        .logo-container-test {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container-test img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-container-test h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Links */
+        .nav-test-ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-test-ul li {
+            margin: 0 15px;
+            position: relative;
+            
+        }
+
+        .nav-test-ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            font-size: 15px
+        }
+
+        .nav-test-ul li a:hover, .nav-test-ul li a.active {
+            color: #ff0077;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .dropdown li {
+            padding: 10px 20px;
+        }
+
+        .dropdown li a {
+            color: #333;
+        }
+
+        .dropdown li a:hover {
+            color: #ff0077;
+        }
+
+        .nav-test-ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* Chat Button */
+        .chat-btn {
+            background-color: #ff0077;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .chat-btn:hover {
+            background-color: #e60066;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            /* Hide menu by defa.nav-test-ult on mobile */
+            .nav-test-ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            .nav-test-ul.show {
+                display: flex;
+            }
+
+            .nav-test-ul li {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+
+            .hamburger .bar {
+                width: 25px;
+                height: 3px;
+                background-color: #333;
+                margin: 5px 0;
+                transition: 0.4s;
+            }
+
+            .logo-container {
+                flex-grow: 1;
+            }
+
+            /* Hide the navigation links (.nav-test-ul) by defa.nav-test-ult on mobile */
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Defa.nav-test-ult (non-mobile) view */
+        .hamburger {
+            display:inline;
+        }

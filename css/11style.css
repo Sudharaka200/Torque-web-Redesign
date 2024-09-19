@@ -104,44 +104,75 @@
 
 
 
-    .services-link {
-        position: relative; /* Needed for absolute positioning of the dropdown */
-    }
-    
-    .services-dropdown {
-        display: none;
+
+/* Navbar */
+
+
+.header_header__container__3N0Ku {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header_header__links__UDfJa {
+    display: flex;
+    list-style: none;
+}
+
+.header_header__links__UDfJa li {
+    margin: 0 10px;
+}
+
+.header_header__links__UDfJa a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header_header__links__UDfJa a:hover {
+    text-decoration: underline;
+}
+
+.header_header__contact_btn__yKwvs {
+    margin-left: auto;
+}
+
+.button_button__LTUUI {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header_header__burger_btn__ADzlD {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header_header__links__UDfJa {
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
         position: absolute;
-        top: 100%; /* Position right below the "Services" link */
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        z-index: 100;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 250px;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
     }
 
-    .services-link:hover .services-dropdown {
-        display: block; /* Show dropdown on hover */
+    .header_header__links__UDfJa.active {
+        display: flex; /* Show menu when active */
     }
 
-    .services-dropdown .service {
-        padding: 10px;
-        border-bottom: 1px solid #eee;
+    .header_header__burger_btn__ADzlD {
+        display: block; /* Show the burger button */
     }
-
-    .services-dropdown .service:last-child {
-        border-bottom: none; /* Remove border for the last service */
-    }
-
-    .services-dropdown .service h3 {
-        margin: 0;
-        font-size: 16px;
-    }
-
-    .services-dropdown .service p {
-        font-size: 14px;
-        margin-top: 5px;
-        color: #666;
-    }
-
+}

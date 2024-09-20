@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/nav.css">
     <style>
-          .block {
-      opacity: 0; /* Initially hidden */
+    .block {
+    opacity: 0; /* Initially hidden */
     }
 
     .appear {
-      opacity: 1; /* Show when the animation starts */
+    opacity: 1; /* Show when the animation starts */
     }
+
+    .animate__animated {
+    animation-duration: 1s; /* Adjust animation timing if needed */
+    }
+
     </style>
 </head>
 
@@ -636,6 +641,24 @@
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('show');
+        });
+    </script>
+    <script>
+        // Function to handle the intersection
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+            // Add appear class and animation class
+            entry.target.classList.add('appear', 'animate__animated', entry.target.dataset.animation);
+            // Optionally stop observing the element once it's animated
+            observer.unobserve(entry.target);
+            }
+        });
+        });
+
+        // Select all elements with class 'block'
+        document.querySelectorAll('.block').forEach((element) => {
+        observer.observe(element);
         });
     </script>
     <!-- <script src="js/humburger.js"></script>  -->

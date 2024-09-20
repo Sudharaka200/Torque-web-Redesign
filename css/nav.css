@@ -59,7 +59,7 @@
         }
 
         .nav-test-ul li a:hover, .nav-test-ul li a.active {
-            color: #ff0077;
+            color: #d44016;
         }
 
         /* Dropdown Menu */
@@ -84,7 +84,7 @@
         }
 
         .dropdown li a:hover {
-            color: #ff0077;
+            color: #d44016;
         }
 
         .nav-test-ul li:hover .dropdown {
@@ -93,7 +93,7 @@
 
         /* Chat Button */
         .chat-btn {
-            background-color: #ff0077;
+            background-color: #d44016;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
@@ -104,7 +104,7 @@
         }
 
         .chat-btn:hover {
-            background-color: #e60066;
+            background-color: #d44016;
         }
 
         /* Responsive Styling */

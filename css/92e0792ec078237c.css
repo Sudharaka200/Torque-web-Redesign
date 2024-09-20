@@ -500,7 +500,7 @@
 :root {
     --font-color-primary: #1f1f24;
     --font-color-secondary: #412433;
-    --font-color-third: #df0070;
+    --font-color-third: #d1050d;
     --font-color-fourth: #fff;
     --font-color-fifth: #707070;
     --font-color-sixth: #2c2c2c;
@@ -509,18 +509,18 @@
     --font-paragraph-color: #624d58;
     --bg-color-primary: #fff;
     --bg-color-secondary: #f9f9f9;
-    --bg-color-third: #df0070;
+    --bg-color-third: #d1050d;
     --bg-color-fourth: #1f1f24;
     --bg-color-fifth: #27141e;
     --bg-color-sixth: #4d4d4d;
-    --bg-color-seventh: #ee3e97;
+    --bg-color-seventh: #d1050d;
     --bg-color-eigth: #1e1319;
     --border-primary: 1px solid #e4e4e4;
     --border-color: #e4e4e4;
     --border-secondary-color: #c7c7c7;
-    --border-third-color: #ee91c0;
-    --svg-color-primary: #df0070;
-    --svg-color-secondary: #e42685;
+    --border-third-color: #e04848;
+    --svg-color-primary: #d1050d;
+    --svg-color-secondary: #d1050d;
     --scrollbar-track-color: #fff;
     --scrollbar-thumb-color: #1f1f24;
     --error-color: red;
@@ -1434,7 +1434,7 @@ figure.wp-block-gallery.aligncenter {
     }
 }
 
-:root {
+/* :root {
     --font-color-primary: #1f1f24;
     --font-color-secondary: #412433;
     --font-color-third: #df0070;
@@ -1462,7 +1462,7 @@ figure.wp-block-gallery.aligncenter {
     --scrollbar-thumb-color: #1f1f24;
     --error-color: red;
     --box-shadow: 0px 4px 25px rgba(0, 0, 0, .1)
-}
+} */
 
 * {
     box-sizing: border-box
@@ -2367,7 +2367,7 @@ figure.wp-block-gallery.aligncenter {
     }
 }
 
-:root {
+/* :root {
     --font-color-primary: #1f1f24;
     --font-color-secondary: #412433;
     --font-color-third: #df0070;
@@ -2395,7 +2395,7 @@ figure.wp-block-gallery.aligncenter {
     --scrollbar-thumb-color: #1f1f24;
     --error-color: red;
     --box-shadow: 0px 4px 25px rgba(0, 0, 0, .1)
-}
+} */
 
 * {
     box-sizing: border-box
@@ -3300,7 +3300,7 @@ figure.wp-block-gallery.aligncenter {
     }
 }
 
-:root {
+/* :root {
     --font-color-primary: #1f1f24;
     --font-color-secondary: #412433;
     --font-color-third: #df0070;
@@ -3328,7 +3328,7 @@ figure.wp-block-gallery.aligncenter {
     --scrollbar-thumb-color: #1f1f24;
     --error-color: red;
     --box-shadow: 0px 4px 25px rgba(0, 0, 0, .1)
-}
+} */
 
 * {
     box-sizing: border-box

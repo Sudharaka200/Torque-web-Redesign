@@ -11,7 +11,16 @@
     <meta name="theme-color" content="#fff">
     <title>Web Application Development | Torque Software</title>
     <link rel="stylesheet" href="css/nav.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .block {
+        opacity: 0; /* Initially hidden */
+    }
+
+    .appear {
+        opacity: 1; /* Show when the animation starts */
+    }
+  </style>
 </head>
 
 <body class="layout_layout__MEILQ" >
@@ -49,11 +58,11 @@
                 <section class="info-secondary-section_info_secondary__8__UJ">
                     <div class="info-secondary-section_info_secondary__container__t4gVs">
                         <div class="info-secondary-section_info_secondary__inner___HERp">
-                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1">
+                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown">
                                 <p>Services
                                 </p>
                             </h2>
-                            <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE">
+                            <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE block animate__animated"  data-animation="animate__backInLeft">
                                 <p style="font-size: 20px;">Regardless of how complex or even small your needs are , our dedicated in-house team of developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.
                             </div>
                         </div>
@@ -159,16 +168,14 @@
                 <section class="schedule-call_schedule_call__T0597">
                     <div class="schedule-call_schedule_call__container___cogb">
                         <div class="schedule-call_schedule_call__inner__ZjUkj">
-                            <p class="global-under-title schedule-call_schedule_call__inner__undertitle__R72JM">READY TO BUILD SOMETHING
-                                AMAZING?</p>
-                            <h2 class="global-title _secondary schedule-call_schedule_call__inner__title__QGS_K">
+                            <p class="global-under-title schedule-call_schedule_call__inner__undertitle__R72JM block animate__animated" data-animation="animate__fadeInDown">READY TO BUILD SOMETHING AMAZING?
+                            </p>
+                            <h2 class="global-title _secondary schedule-call_schedule_call__inner__title__QGS_K block animate__animated" data-animation="animate__bounceIn">
                                 <p>Your Next <strong>Great App</strong> Awaits</p>
                             </h2>
-                            <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5">Let’s discuss how Materialize
-                                Labs can help bring your project to life.</p>
-                            <div class="schedule-call_schedule_call__inner__btn__hD2LL"><a href="/contact-us"><button
-                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a>
-                            </div>
+                            <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__pulse">Let's discuss how Torque Software can help bring your project to life.</p>
+                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__fadeInUp"><a href="contact.html"><button
+                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
                         </div>
                     </div>
                 </section>
@@ -257,6 +264,31 @@
             navLinks.classList.toggle('show');
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const blocks = document.querySelectorAll('.block');
+          const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Trigger when 50% of the element is in view
+          };
+    
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const animationClass = entry.target.getAttribute('data-animation');
+                entry.target.classList.add('animate__animated', animationClass);
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target); // Stop observing once animated
+              }
+            });
+          }, observerOptions);
+    
+          blocks.forEach(block => {
+            observer.observe(block);
+          });
+        });
+      </script>
 </body>
 
 </html>

@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="/css/11style.css">
     <meta name="theme-color" content="#fff">
     <title>Front End Development | Torque Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .block {
+    opacity: 0; /* Initially hidden */
+  }
+
+  .appear {
+    opacity: 1; /* Show when the animation starts */
+  }
+  </style>
 </head>
 
 <body class="layout_layout__MEILQ" >
@@ -53,19 +63,28 @@
                 <section class="info-secondary-section_info_secondary__8__UJ">
                     <div class="info-secondary-section_info_secondary__container__t4gVs">
                         <div class="info-secondary-section_info_secondary__inner___HERp">
-                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1">
+                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown">
                                 <p>What We Use
                                 </p>
                             </h2>
                             <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE">
-                                <h4 class="our-values-section_values_list__title__sJ7Bn" style="font-size: larger;"><strong>Javascript</strong><br>
-                                </h4>
-                                <p style="font-size: 20px;">Want your website or web app to perform faster and more powerfully than your competitor’s websites? Want to boost user retention and user experience? So do we. In fact, you could have the best product, service, or offer in the world, but if your website is slow or weak, nobody will buy from you. That’s why we use Javascript, a powerful and tested foundation for your apps—so everyone who wants your offer has no problems getting it.
+                                <div style="display: flex; justify-content: center; margin-bottom: 20px; " class="block animate__animated" data-animation="animate__bounceInLeft">
+                                    <img src="images/js-logo.png" alt="">
+                                </div>
+                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__bounceInLeft" style="font-size: larger; "><strong>Javascript</strong></h4>
+                                <p style="font-size: 20px; " class="block animate__animated" data-animation="animate__bounceInLeft">
+                                    Want your website or web app to perform faster and more powerfully than your competitor’s websites? Want to boost user retention and user experience? So do we. In fact, you could have the best product, service, or offer in the world, but if your website is slow or weak, nobody will buy from you. That’s why we use Javascript, a powerful and tested foundation for your apps—so everyone who wants your offer has no problems getting it.
                                 </p><br><br>
-                                <h4 class="our-values-section_values_list__title__sJ7Bn" style="font-size: larger;"><strong>HTML</strong><br>
-                                </h4>
-                                <p style="font-size: 20px;">Want your website or web app to perform faster and more powerfully than your competitor’s websites? Want to boost user retention and user experience? So do we. In fact, you could have the best product, service, or offer in the world, but if your website is slow or weak, nobody will buy from you. That’s why we use Javascript, a powerful and tested foundation for your apps—so everyone who wants your offer has no problems getting it.</p>
+                            
+                                <div style="display: flex; justify-content: center;">
+                                    <img src="images/html-logo.png" alt="">
+                                </div><br>
+                                <h4 class="our-values-section_values_list__title__sJ7Bn" style="font-size: larger;"><strong>HTML</strong><br></h4>
+                                <p style="font-size: 20px;">
+                                    Want your website or web app to perform faster and more powerfully than your competitor’s websites? Want to boost user retention and user experience? So do we. In fact, you could have the best product, service, or offer in the world, but if your website is slow or weak, nobody will buy from you. That’s why we use Javascript, a powerful and tested foundation for your apps—so everyone who wants your offer has no problems getting it.
+                                </p>
                             </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -292,6 +311,31 @@
             navLinks.classList.toggle('show');
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const blocks = document.querySelectorAll('.block');
+          const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Trigger when 50% of the element is in view
+          };
+    
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const animationClass = entry.target.getAttribute('data-animation');
+                entry.target.classList.add('animate__animated', animationClass);
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target); // Stop observing once animated
+              }
+            });
+          }, observerOptions);
+    
+          blocks.forEach(block => {
+            observer.observe(block);
+          });
+        });
+      </script>
 </body>
 
 </html>

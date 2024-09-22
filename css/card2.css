@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* For 4 cards in a row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.333% - 20px); /* 3 cards per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card per row for mobile screens */
+    }
+}

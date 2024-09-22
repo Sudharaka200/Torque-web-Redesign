@@ -13,6 +13,7 @@
     <title>Front End Development | Torque Software</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/card.css">
     <style>
         .block {
     opacity: 0; /* Initially hidden */
@@ -21,6 +22,7 @@
   .appear {
     opacity: 1; /* Show when the animation starts */
   }
+  
   </style>
 </head>
 
@@ -56,7 +58,7 @@
         </nav>
     </div>
     <main class="layout_layout__inner__Ln18k">
-        <div class="block animate__animated animate__bounceInLeft" style="background-image: url('images/banner-Final2.png'); height: 50vh; background-size: cover; background-position: center; position: relative;">
+        <div class="block animate__animated animate__bounceInLeft" style="background-image: url('images/banner-Final2.png'); height: 50vh; background-size: cover; background-position: center; position: relative;width: 100;">
             <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center;">
               <h1 style="color: white; font-size: 4rem; text-align: center;">Front End Development</h1>
             </div>
@@ -153,57 +155,67 @@
                                       </div>
                                   </div>
                                   <p class="dev-process__subtitle block" data-animation="animate__fadeInUp">Because you and your offer are unique, we will select the perfect framework for your needs—even going out off our way to use and test multiple frameworks to find which one is a best fit for you. These frameworks provide intuitive clean code so your site is more responsive</p>
-
-
-                                  <div class="services__slider block" data-animation="animate__backInRight">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                            <div class="services-img">
-                                                <img class="backgrond-image" alt="ios" src="images/angular-back.png" />
-                                            </div>
-                                            <p class="desc-title">AngularJS</p>
-                                            <p class="services-text">AngularJS, an open-source app mostly maintained by Google and other communities. Used on the websites of Wolfram Alpha, NBC, Walgreens, Intel, Sprint, ABC News, and thousands of others, this framework was created in response to some of the challenges encountered in developing single-page applications.
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/angular-back.png" alt="AngularJS Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">AngularJS</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">AngularJS, an open-source app mostly maintained by Google and other communities. Used on the websites of Wolfram Alpha, NBC, Walgreens, Intel, Sprint, ABC News, and thousands of others, this framework was created in response to some of the challenges encountered in developing single-page applications.</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/react-back.png" alt="ReactJS Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">ReactJS</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">ReactJS is favored when developers need to create large web applications that can change over time. It’s a fast, simple, and scalable framework used by Netflix, Walmart, Airbnb, Imgur, and others.
                                             </p>
                                         </div>
-                                        <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                            <div class="services-img">
-                                                <img class="backgrond-image" alt="android" src="images/react-back.png" />
-                                            </div>
-                                            <p class="desc-title">ReactJS</p>
-                                            <p class="services-text">ReactJS is favored when developers need to create large web applications that can change over time. It’s a fast, simple, and scalable framework used by Netflix, Walmart, Airbnb, Imgur, and others.
-                                            </p>
-                                        </div>
-                                        <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                          <div class="services-img">
-                                              <img class="backgrond-image" alt="android" src="images/jqery-back.png" />
-                                          </div>
-                                          <p class="desc-title">jQuery </p>
-                                          <p class="services-text"> Query’s goal is to make user experience simpler. Whether managing events, selecting DOM elements, navigating a document, or crafting animations, jQuery is a capable and effective too. Microsoft and Nokia bundle jQuery on their platforms.
-                                          </p>
-                                      </div>
-                                      <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                        <div class="services-img">
-                                            <img class="backgrond-image" alt="android" src="images/d3js.png" />
-                                        </div>
-                                        <p class="desc-title">D3</p>
-                                        <p class="services-text">D3.js stands for Data-Driven-Documents. It’s s a framework for the production of interactive data visualizations in web browsers. It’s useful when rich graphics are necessary—for example, the New York Times often uses it for web content.
-                                        </p>
                                     </div>
-                                    <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                      <div class="services-img">
-                                          <img class="backgrond-image" alt="android" src="images/node-back.png" />
-                                      </div>
-                                      <p class="desc-title">Node.js</p>
-                                      <p class="services-text">Node.js helps produce dynamic web content and allows web app development to unify around a single programming language instead of needing to use many different languages for writing server scripts. Recognizable users of Node.js are IBM, GoDaddy, Groupon, LinkedIn, Microsoft, Netflix, and Walmart.
-                                      </p>
-                                  </div>
-                                  <div class="swiper-slide services-slider-item" style="margin-left: 12px;">
-                                    <div class="services-img">
-                                        <img class="backgrond-image" alt="android" src="images/vue.png" />
+                            
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/jqery-back.png" alt="jQuery Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">jQuery</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">JQuery’s goal is to make user experience simpler. Whether managing events, selecting DOM elements, navigating a document, or crafting animations, jQuery is a capable and effective too. Microsoft and Nokia bundle jQuery on their platforms.</p>
+                                        </div>
                                     </div>
-                                    <p class="desc-title">VueJS </p>
-                                    <p class="services-text">Vue.js is an open-source progressive framework designed for ease of adoption in building user interfaces. It is currently the most starred project in GitHub.
-                                    </p>
+                            
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/d3js.png" alt="D3 Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">D3</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;"> D3.js stands for Data-Driven-Documents. It’s s a framework for the production of interactive data visualizations in web browsers. It’s useful when rich graphics are necessary—for example, the New York Times often uses it for web content.</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/node-back.png" alt="Node.js Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">Node.js</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">Node.js helps produce dynamic web content and allows web app development to unify around a single programming language instead of needing to use many different languages for writing server scripts. Recognizable users of Node.js are IBM, GoDaddy, Groupon, LinkedIn, Microsoft, Netflix, and Walmart.</p>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/vue.png" alt="VueJS Logo">
+                                        </div>
+                                        <div class="card-content">
+                                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">VueJS</h4>
+                                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;"> Vue.js is an open-source progressive framework designed for ease of adoption in building user interfaces. It is currently the most starred project in GitHub.</p>
+                                        </div>
+                                    </div>
                                 </div>
                                </div>
                                </div>

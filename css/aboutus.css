@@ -85,6 +85,35 @@ body {
     stroke: #555;
     stroke-width: 2;
   }
+
+/* newcss */
+/* Hide the service details by default */
+.service-details {
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 8px;
+  animation: fadeIn 0.3s;
+}
+
+/* Show the service details on hover */
+.service:hover .service-details {
+  display: block;
+}
+
+/* Add some animation for a smoother pop-up */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* newcsss */
   
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {

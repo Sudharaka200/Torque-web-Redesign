@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay content on top of video */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content a {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+}

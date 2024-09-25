@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/card2.css">
+    <link rel="stylesheet" href="css/animatedvideos.css">
     <style>
         .block {
         opacity: 0; /* Initially hidden */
@@ -21,7 +22,9 @@
     .appear {
         opacity: 1; /* Show when the animation starts */
     }
-    
+    .animate__animated {
+      animation-duration: 1s; /* Slows down to 2 seconds */
+    }
     /* Technology Animation */
     .custom-container {
             max-width: 800px; /* Set a custom width smaller than Bootstrap's 1140px */
@@ -64,7 +67,7 @@
 
 <body class="layout_layout__MEILQ" >
     <div style="z-index: 10001;" class="header_header__container__3N0Ku ">
-        <nav class="nav-test " style=" height: 90px;">
+        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
             <div class="logo-container-test"style="">
                 <img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;">
             </div>
@@ -93,12 +96,34 @@
             <div class="animate__animated animate__fadeInRight"><a href="contact.html" class="chat-btn" style="color: #fff; width: 140px; height: 40px; font-size: 15px;">Chat With Us</a></div>
         </nav>
     </div>
-    <main class="layout_layout__inner__Ln18k">
-        <div class="block animate__animated animate__bounceInLeft" style="background-image: url('images/banner-Final1.png'); height: 50vh; background-size: cover; background-position: center; position: relative;">
-            <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center;">
-              <h1 style="color: white; font-size: 4rem; text-align: center;">Web Development</h1>
+            <!-- video -->
+            <div class="video-container" style="position: absolute; top: 0; left: 0;">
+                <!-- Desktop Video -->
+                <video autoplay loop muted plays-inline class="background-clip desktop-video">
+                    <source src="images/videos/webdevelopmenntv1.mp4">
+                </video>
+            
+                <!-- Tablet Video -->
+                <video autoplay loop muted plays-inline class="background-clip tablet-video">
+                    <source src="images/videos/webdevelopmentv2.mp4">
+                </video>
+            
+                <!-- Mobile Video -->
+                <video autoplay loop muted plays-inline class="background-clip mobile-video">
+                    <source src="images/videos/webdevelopmentv3.mp4">
+                </video>
+            
+                <!-- Dark Overlay -->
+                <div class="dark-overlay"></div>
+            
+                <!-- Overlay Content -->
+                <div class="content">
+                    <h1>Front End Development</h1>
+                    <a href="#">Chat With Us</a>
+                </div>
             </div>
-          </div>
+        <!-- video -->
+    <main class="layout_layout__inner__Ln18k frontend-margin-web">
             <div class="about_about__container__sB1fI">
                 <section class="info-secondary-section_info_secondary__8__UJ">
                     <div class="info-secondary-section_info_secondary__container__t4gVs">
@@ -121,7 +146,7 @@
                         <div class="our-values-section_values_list__zyn6C">
                             <div class="grey-container" >
                                 <div class="our-services-container">
-                                    <div style="margin-top: -130px; ">
+                                    <div style="margin-top: -130px; width: 100%;" >
                                         <div class="services__slider block" data-animation="animate__backInRight">
                                             <div class="swiper-wrapper">
                                                 <div class="card-container">

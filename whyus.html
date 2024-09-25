@@ -21,6 +21,9 @@
     .appear {
         opacity: 1; /* Show when the animation starts */
     }
+    .animate__animated {
+      animation-duration: 1s; /* Slows down to 2 seconds */
+    }
   </style>
     
 </head>
@@ -80,6 +83,16 @@
                         <img src="images/experts-on-call.png" alt="Cloud Computing">
                       </div>
                       <h3 class="animate__animated animate__fadeInUp"><strong>Experts on call</strong></h3>
+                      <div style="z-index: 10;" class="service-details">
+                        <div>
+                            <img src="images/experts-on-call.png" alt="" style="width: 20%;">
+                            <h2 class="" data-animation="">
+                                <p><strong>Experts on call</strong> </p>
+                            </h2>
+                            <p class="" data-animation="">We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team</p>
+                        </div>
+                      </div>
+
                     </div>
       
                     <!-- Service 2: Data Management -->
@@ -88,6 +101,17 @@
                         <img src="images/suctom-team-building.png" alt="Data Management">
                       </div>
                       <h3 class="animate__animated animate__fadeInUp"><strong>Custom team building</strong></h3>
+                      <div style="z-index: 10;" class="service-details">
+                        <div>
+                            <img src="images/suctom-team-building.png" alt="" style="width: 20%;">
+                            <h2 class="" data-animation="">
+                                <p><strong>Custom team building</strong> </p>
+                            </h2>
+                            <p class="" data-animation="">We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team.
+                            </p>
+                            <br><br>
+                        </div>
+                      </div>
                     </div>
       
                     <!-- Service 3: Software Development -->
@@ -96,6 +120,16 @@
                         <img src="images/quality-gurantee.png" alt="Software Development">
                       </div>
                       <h3 class="animate__animated animate__fadeInUp"><strong>Quality guarantee</strong></h3>
+                      <div style="z-index: 10;" class="service-details">
+                        <div>
+                            <img src="images/quality-gurantee.png" alt="" style="width: 20%;">
+                            <h2 class="" data-animation="">
+                                <p><strong>Quality guarantee</strong> </p>
+                            </h2>
+                            <p class="" data-animation="">All of this is backed with ironclad NDAs. We don’t share the nature of your work with anyone. Transparency is a given, and we share detailed timesheets and work reports. And finally, you get a no-questions -asked money back guarantee. Cancel at any time.
+                            </p>
+                        </div>
+                      </div>
                     </div>
       
                   </div>
@@ -283,6 +317,17 @@
                   blocks.forEach(block => {
                     observer.observe(block);
                   });
+                });
+              </script>
+              <script>
+                    document.querySelectorAll('.service').forEach(service => {
+                    service.addEventListener('mouseenter', function() {
+                        this.querySelector('.service-details').style.display = 'block';
+                    });
+
+                    service.addEventListener('mouseleave', function() {
+                        this.querySelector('.service-details').style.display = 'none';
+                    });
                 });
               </script>
 </body>

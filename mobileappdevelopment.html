@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/0fd6e2e199d6e1de.css" data-precedence="next">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/animatedvideos.css">
     <style>
         .block {
     opacity: 0; /* Initially hidden */
@@ -20,12 +21,15 @@
   .appear {
     opacity: 1; /* Show when the animation starts */
   }
+  .animate__animated {
+      animation-duration: 1s; /* Slows down to 2 seconds */
+    }
   </style>
 </head>
 
 <body class="layout_layout__MEILQ">
     <div style="z-index: 10001;" class="header_header__container__3N0Ku ">
-        <nav class="nav-test " style=" height: 90px;">
+        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
             <div class="logo-container-test"style="">
                 <img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;">
             </div>
@@ -55,12 +59,34 @@
         </nav>
     </div>
     <main class="layout_layout__inner__Ln18k">
-        <div class="block animate__animated animate__bounceInLeft" style="background-image: url('images/banner-Final3.png'); height: 50vh; background-size: cover; background-position: center; position: relative;">
-            <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center;">
-              <h1 style="color: white; font-size: 4rem; text-align: center;">Mobile App Development</h1>
+        <!-- video -->
+        <div class="video-container" style="position: absolute; top: 0; left: 0;">
+            <!-- Desktop Video -->
+            <video autoplay loop muted plays-inline class="background-clip desktop-video">
+                <source src="images/videos/appdevelopmentv1.mp4">
+            </video>
+        
+            <!-- Tablet Video -->
+            <video autoplay loop muted plays-inline class="background-clip tablet-video">
+                <source src="images/videos/appdevelopmentv2.mp4">
+            </video>
+        
+            <!-- Mobile Video -->
+            <video autoplay loop muted plays-inline class="background-clip mobile-video">
+                <source src="images/videos/appdevelopmentv3.mp4">
+            </video>
+        
+            <!-- Dark Overlay -->
+            <div class="dark-overlay"></div>
+        
+            <!-- Overlay Content -->
+            <div class="content">
+                <h1>Front End Development</h1>
+                <a href="#">Chat With Us</a>
             </div>
-          </div>
-            <div class="about_about__container__sB1fI">
+        </div>
+    <!-- video -->
+            <div class="about_about__container__sB1fI frontend-margin">
                 <section class="info-secondary-section_info_secondary__8__UJ">
                     <div class="info-secondary-section_info_secondary__container__t4gVs">
                         <div class="info-secondary-section_info_secondary__inner___HERp">

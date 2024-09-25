@@ -23,13 +23,16 @@
   .appear {
     opacity: 1; /* Show when the animation starts */
   }
+  .animate__animated {
+      animation-duration: 1s; /* Slows down to 2 seconds */
+    }
   
   </style>
 </head>
 
 <body class="layout_layout__MEILQ" >
     <div style="z-index: 10001; " class="header_header__container__3N0Ku " >
-        <nav class="nav-test " style=" height: 90px;     background-color: rgba(255, 255, 255, 0.9);">
+        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
             <div class="logo-container-test"style="">
                 <img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;">
             </div>
@@ -59,26 +62,33 @@
         </nav>
     </div>
     <!-- video -->
-        <div>
-            <div class="video-container" style="position: absolute; top: 0; left: 0;">
-                <video autoplay loop muted plays-inline class="backgrond-clip">
-                    <source src="images/videos/7989448-hd_1920_1080_25fps.mp4"> 
-                </video>
-                <!-- Dark Overlay -->
-                <div class="dark-overlay"></div>
-
-                <!-- Overlay Content -->
-                <div class="content">
-                    <h1>Front End Development</h1>
-                    <a href="#">Chat With Us</a>
-                </div>
-            </div> 
+        <div class="video-container" style="position: absolute; top: 0; left: 0;">
+            <!-- Desktop Video -->
+            <video autoplay loop muted plays-inline class="background-clip desktop-video">
+                <source src="images/videos/frontendv1.mp4">
+            </video>
+        
+            <!-- Tablet Video -->
+            <video autoplay loop muted plays-inline class="background-clip tablet-video">
+                <source src="images/videos/frontendv2.mp4">
+            </video>
+        
+            <!-- Mobile Video -->
+            <video autoplay loop muted plays-inline class="background-clip mobile-video">
+                <source src="images/videos/frontendv3.mp4">
+            </video>
+        
+            <!-- Dark Overlay -->
+            <div class="dark-overlay"></div>
+        
+            <!-- Overlay Content -->
+            <div class="content">
+                <h1>Front End Development</h1>
+                <a href="#">Chat With Us</a>
+            </div>
         </div>
-
-
     <!-- video -->
-
-    <main class="layout_layout__inner__Ln18k" style="margin-top: 400px;">
+    <main class="layout_layout__inner__Ln18k frontend-margin" >
             <div class="about_about__container__sB1fI">
                 <div class="about_about__container__sB1fI">
                     <section class="info-secondary-section_info_secondary__8__UJ">

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/animatedvideos.css">
     <style>
         .block {
     opacity: 0; /* Initially hidden */
@@ -27,8 +28,8 @@
 </head>
 
 <body class="layout_layout__MEILQ" >
-    <div style="z-index: 10001;" class="header_header__container__3N0Ku ">
-        <nav class="nav-test " style=" height: 90px;">
+    <div style="z-index: 10001; " class="header_header__container__3N0Ku " >
+        <nav class="nav-test " style=" height: 90px;     background-color: rgba(255, 255, 255, 0.9);">
             <div class="logo-container-test"style="">
                 <img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;">
             </div>
@@ -57,36 +58,27 @@
             <div class="animate__animated animate__fadeInRight"><a href="contact.html" class="chat-btn" style="color: #fff; width: 140px; height: 40px; font-size: 15px;">Chat With Us</a></div>
         </nav>
     </div>
-    <main class="layout_layout__inner__Ln18k">
-        
-        <!-- backgroundimg -->
+    <!-- video -->
         <div>
-            <div>
-              <section class="schedule-call_schedule_call__T0597">
-                <div class="schedule-call_schedule_call__container___cogb">
-                  <div class="schedule-call_schedule_call__inner__ZjUkj" style="position: relative; width: 100%; height: 100px;">
-                    <!-- Video Background -->
-                    <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-                      <source src="https://player.vimeo.com/external/7989448.hd.mp4?s=28b1a24a7e5930afeeebd9232bbff54c441de923&profile_id=174" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-          
-                    <!-- Overlay Content -->
-                    <div class="container" style="position: relative; z-index: 1;">
-                      <h1>Front End Development</h1>
-                    </div>
-                  </div>
+            <div class="video-container" style="position: absolute; top: 0; left: 0;">
+                <video autoplay loop muted plays-inline class="backgrond-clip">
+                    <source src="images/videos/7989448-hd_1920_1080_25fps.mp4"> 
+                </video>
+                <!-- Dark Overlay -->
+                <div class="dark-overlay"></div>
+
+                <!-- Overlay Content -->
+                <div class="content">
+                    <h1>Front End Development</h1>
+                    <a href="#">Chat With Us</a>
                 </div>
-              </section>
-            </div>
-          </div>
-          
-        <!-- backgroundimg -->
+            </div> 
+        </div>
 
 
+    <!-- video -->
 
-
-        
+    <main class="layout_layout__inner__Ln18k" style="margin-top: 400px;">
             <div class="about_about__container__sB1fI">
                 <div class="about_about__container__sB1fI">
                     <section class="info-secondary-section_info_secondary__8__UJ">

@@ -112,6 +112,8 @@
 
 
 .frontend-margin { margin-top: 20%; }
+.webapp-margin{margin-top: 25%;}
+.mobileapp-margin{margin-top: 25%;}
 
 
 /* Margin Fix */
@@ -119,11 +121,23 @@
     .frontend-margin {
         margin-top: 10%;
     }
+    .webapp-margin{
+        margin-top: 15%;
+    }
+    .mobileapp-margin{
+        margin-top: 20%;
+    }
 }
 
 @media (min-width: 2601px) and (max-width: 3000px) {
     .frontend-margin {
         margin-top: 30%;
+    }
+    .webapp-margin{
+        margin-top: 35%;
+    }
+    .mobileapp-margin{
+        margin-top: 45%;
     }
 }
 
@@ -131,82 +145,166 @@
     .frontend-margin {
         margin-top: 40%;
     }
+    .webapp-margin{
+        margin-top: 45%;
+    }
+    .mobileapp-margin{
+        margin-top: 50%;
+    }
 }
 
 @media (min-width: 1801px) and (max-width: 2250px) {
     .frontend-margin {
         margin-top: 50%;
     }
+    .webapp-margin{
+        margin-top: 60%;
+    }
+    .mobileapp-margin{
+        margin-top: 65%;
+    }
 }
 
 @media (min-width: 1501px) and (max-width: 1800px) {
     .frontend-margin {
-        margin-top: 35%;
+        margin-top: 25%;
+    }
+    .webapp-margin{
+        margin-top: 40%;
+    }
+    .mobileapp-margin{
+        margin-top: 45%;
     }
 }
 
 @media (min-width: 1301px) and (max-width: 1500px) {
     .frontend-margin {
-        margin-top: 70%;
+        margin-top: 30%;
+    }
+    .webapp-margin{
+        margin-top: 40%;
+    }
+    .mobileapp-margin{
+        margin-top: 45%;
     }
 }
 
 @media (min-width: 1151px) and (max-width: 1300px) {
     .frontend-margin {
-        margin-top: 80%;
+        margin-top: 40%;
+    }
+    .webapp-margin{
+        margin-top: 45%;
+    }
+    .mobileapp-margin{
+        margin-top: 50%;
     }
 }
 
 @media (min-width: 1001px) and (max-width: 1150px) {
     .frontend-margin {
-        margin-top: 90%;
+        margin-top: 50%;
+    }
+    .webapp-margin{
+        margin-top: 60%;
+    }
+    .mobileapp-margin{
+        margin-top: 65%;
     }
 }
 
 @media (min-width: 851px) and (max-width: 1000px) {
     .frontend-margin {
-        margin-top: 120%;
+        margin-top: 60%;
+    }
+    .webapp-margin{
+        margin-top: 70%;
+    }
+    .mobileapp-margin{
+        margin-top: 75%;
     }
 }
 
 @media (min-width: 801px) and (max-width: 850px) {
     .frontend-margin {
-        margin-top: 130%;
+        margin-top: 80%;
+    }
+    .webapp-margin{
+        margin-top: 90%;
+    }
+    .mobileapp-margin{
+        margin-top: 95%;
     }
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
     .frontend-margin {
-        margin-top: 150%;
+        margin-top: 100%;
+    }
+    .webapp-margin{
+        margin-top: 110%;
+    }
+    .mobileapp-margin{
+        margin-top: 120%;
     }
 }
 
 @media (min-width: 601px) and (max-width: 700px) {
     .frontend-margin {
-        margin-top: 170%;
+        margin-top: 120%;
+    }
+    .webapp-margin{
+        margin-top: 130%;
+    }
+    .mobileapp-margin{
+        margin-top: 135%;
     }
 }
 
 @media (min-width: 551px) and (max-width: 600px) {
     .frontend-margin {
-        margin-top: 190%;
+        margin-top: 140%;
+    }
+    .webapp-margin{
+        margin-top: 150%;
+    }
+    .mobileapp-margin{
+        margin-top: 155%;
     }
 }
 
 @media (min-width: 501px) and (max-width: 550px) {
     .frontend-margin {
-        margin-top: 210%;
+        margin-top: 160%;
+    }
+    .webapp-margin{
+        margin-top: 170%;
+    }
+    .mobileapp-margin{
+        margin-top: 175%;
     }
 }
 
 @media (min-width: 451px) and (max-width: 500px) {
     .frontend-margin {
-        margin-top: 230%;
+        margin-top: 180%;
+    }
+    .webapp-margin{
+        margin-top: 190%;
+    }
+    .mobileapp-margin{
+        margin-top: 195%;
     }
 }
 
 @media (max-width: 450px) {
     .frontend-margin {
-        margin-top: 260%;
+        margin-top: 200%;
+    }
+    .webapp-margin{
+        margin-top: 210%;
+    }
+    .mobileapp-margin{
+        margin-top: 215%;
     }
 }

@@ -111,10 +111,102 @@
 }
 
 
+.frontend-margin { margin-top: 20%; }
 
 
 /* Margin Fix */
-@media (max-width:2500px) {
-    .frontend-margin{margin-top: 400px;}
+@media (min-width: 3001px) {
+    .frontend-margin {
+        margin-top: 10%;
+    }
 }
 
+@media (min-width: 2601px) and (max-width: 3000px) {
+    .frontend-margin {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 2251px) and (max-width: 2600px) {
+    .frontend-margin {
+        margin-top: 40%;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 2250px) {
+    .frontend-margin {
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+    .frontend-margin {
+        margin-top: 60%;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1500px) {
+    .frontend-margin {
+        margin-top: 70%;
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1300px) {
+    .frontend-margin {
+        margin-top: 80%;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1150px) {
+    .frontend-margin {
+        margin-top: 90%;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1000px) {
+    .frontend-margin {
+        margin-top: 120%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 850px) {
+    .frontend-margin {
+        margin-top: 130%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .frontend-margin {
+        margin-top: 150%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    .frontend-margin {
+        margin-top: 170%;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 600px) {
+    .frontend-margin {
+        margin-top: 190%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 550px) {
+    .frontend-margin {
+        margin-top: 210%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+    .frontend-margin {
+        margin-top: 230%;
+    }
+}
+
+@media (max-width: 450px) {
+    .frontend-margin {
+        margin-top: 260%;
+    }
+}

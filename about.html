@@ -23,6 +23,35 @@
     .animate__animated {
       animation-duration: 1s; /* Slows down to 2 seconds */
     }
+    @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    .card {
+      width: 100% !important;
+      max-width: 320px !important;
+      margin-bottom: 20px !important;
+    }
+    .global-title {
+      font-size: 30px !important;
+    }
+    .global-subtitle {
+      font-size: 16px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    div[style*="display: flex"] {
+      flex-direction: column;
+    }
+    div[style*="width: 65%"] {
+      width: 100%;
+    }
+    div[style*="width: 25%"] {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
   </style>
 </head>
 
@@ -54,91 +83,86 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight"><a href="contact.html" class="chat-btn" style="color: #fff; width: 140px; height: 40px; font-size: 15px;">Chat With Us</a></div>
+            <div class="animate__animated animate__fadeInRight">
+                <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                  Chat With Us</a>
+            </div>
         </nav>
     </div>
     <main class="layout_layout__inner__Ln18k">
           <!-- about-images -->
            <!-- about -->
-    <div>
-        <div class="">
-          <section class="schedule-call_schedule_call__T0597" >
-            <div class="schedule-call_schedule_call__container___cogb" >
-              <div class="schedule-call_schedule_call__inner__ZjUkj" style="background-image: url(images/about-back4.jpg);">
-                <div class="container">
-                  
-                  <!-- Central Circle for Why Us -->
-                  <div class="central-cloud">
-                    <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__bounceInUp" style="font-size: 50px;">
-                        We help <strong>global businesses</strong> and <strong>startups to transform ideas</strong> into excellent digital products that drive results
-
-                    </h2>
-                    <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE block animate__animated animate__slow " data-animation="animate__bounceInUp" style=" font-size: 20px;">
-                        <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE block animate__animated" data-animation="animate__fadeInLeftBig">
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="images/abouticon1.png" alt="AngularJS Logo" style="width: 100%;">
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">100%
-                                        </h4> 
-                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">
-                                            Agile Methodology
-                                        </p>
-
-                                    </div>
+           <div>
+            <div>
+              <section class="schedule-call_schedule_call__T0597">
+                <div class="schedule-call_schedule_call__container___cogb">
+                  <div class="schedule-call_schedule_call__inner__ZjUkj" style="background-image: url(images/about-back4.jpg); background-size: cover; background-position: center;">
+                    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+                      
+                      <!-- Central Text Section -->
+                      <div class="central-cloud" style="text-align: center; padding: 20px;">
+                        <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__bounceInUp" style="font-size: 40px; line-height: 1.2; margin-bottom: 30px;">
+                          We help <strong>global businesses</strong> and <strong>startups to transform ideas</strong> into excellent digital products that drive results
+                        </h2>
+                        <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE block animate__animated animate__slow" data-animation="animate__bounceInUp" style="font-size: 18px;">
+                          <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE block animate__animated" data-animation="animate__fadeInLeftBig">
+                            
+                            <!-- Card Container -->
+                            <div class="card-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin: 0 auto; max-width: 1000px;">
+                              
+                              <!-- Card 1 -->
+                              <div class="card" style="flex: 1 1 22%; min-width: 220px; text-align: center;">
+                                <div class="card-image" style="margin-bottom: 10px;">
+                                  <img src="images/abouticon1.png" alt="AngularJS Logo" style="width: 100%;">
                                 </div>
-                        
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="images/abouticon2.png" alt="ReactJS Logo" style="width: 100%;">
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">80%
-                                        </h4>
-                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">
-                                            Repeat Business                                  
-                                        </p>
-                                    </div>
+                                <div class="card-content">
+                                  <h4 class="block animate__animated our-values-section_values_list__title__sJ7Bn" data-animation="animate__fadeInDown">100%</h4>
+                                  <p class="block animate__animated our-values-section_values_list__description__cwHMl" data-animation="animate__fadeInUp" style="font-size: 15px;">Agile Methodology</p>
                                 </div>
-                        
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="images/abouticon3.png" alt="jQuery Logo" style="width: 100%;">
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">100%
-                                        </h4>
-                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">
-                                            IP Protection
-                                        </p>
-
-                                    </div>
+                              </div>
+                              
+                              <!-- Card 2 -->
+                              <div class="card" style="flex: 1 1 22%; min-width: 220px; text-align: center;">
+                                <div class="card-image" style="margin-bottom: 10px;">
+                                  <img src="images/abouticon2.png" alt="ReactJS Logo" style="width: 100%;">
                                 </div>
-                        
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img src="images/abouticon4.png" alt="D3 Logo" style="width: 100%;">
-                                    </div>
-                                    <div class="card-content">
-                                        <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn">100%
-                                        </h4>
-                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 15px;">
-                                            Client Satisfaction                                                            
-                                        </p>
-                                    </div>
+                                <div class="card-content">
+                                  <h4 class="block animate__animated our-values-section_values_list__title__sJ7Bn" data-animation="animate__fadeInDown">80%</h4>
+                                  <p class="block animate__animated our-values-section_values_list__description__cwHMl" data-animation="animate__fadeInUp" style="font-size: 15px;">Repeat Business</p>
                                 </div>
+                              </div>
+                              
+                              <!-- Card 3 -->
+                              <div class="card" style="flex: 1 1 22%; min-width: 220px; text-align: center;">
+                                <div class="card-image" style="margin-bottom: 10px;">
+                                  <img src="images/abouticon3.png" alt="jQuery Logo" style="width: 100%;">
+                                </div>
+                                <div class="card-content">
+                                  <h4 class="block animate__animated our-values-section_values_list__title__sJ7Bn" data-animation="animate__fadeInDown">100%</h4>
+                                  <p class="block animate__animated our-values-section_values_list__description__cwHMl" data-animation="animate__fadeInUp" style="font-size: 15px;">IP Protection</p>
+                                </div>
+                              </div>
+                              
+                              <!-- Card 4 -->
+                              <div class="card" style="flex: 1 1 22%; min-width: 220px; text-align: center;">
+                                <div class="card-image" style="margin-bottom: 10px;">
+                                  <img src="images/abouticon4.png" alt="D3 Logo" style="width: 100%;">
+                                </div>
+                                <div class="card-content">
+                                  <h4 class="block animate__animated our-values-section_values_list__title__sJ7Bn" data-animation="animate__fadeInDown">100%</h4>
+                                  <p class="block animate__animated our-values-section_values_list__description__cwHMl" data-animation="animate__fadeInUp" style="font-size: 15px;">Client Satisfaction</p>
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  </div>
                 </div>
-              </div>
+              </section>
             </div>
-          </section>
-        </div>
-      </div><br>
+          </div>
       <div style="background-image: url('images/square-back\ 4.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
                 <div class="about_about__container__sB1fI">
                     <section class="info-secondary-section_info_secondary__8__UJ">
@@ -221,58 +245,67 @@
                   <div class="info-secondary-section_info_secondary__container__t4gVs">
                     <div class="info-secondary-section_info_secondary__inner___HERp"></div>
               
+                    <!-- Main Container for Flexbox Layout -->
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+              
                       <!-- Left Section (Text) -->
                       <div style="width: 65%; flex-basis: 65%; margin-bottom: 20px;">
                         <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 animate__animated block" data-animation="animate__fadeInLeft">
                           <p><strong>How are we different from other outsourcing companies?</strong></p>
                         </h2>
                         <br>
-                        <div class="our-approach_our_approach__inner__list__kc1qr">
-                            <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                <path fill="#515151"
-                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                </path>
-                            </svg>Focused on your growth - case in point helping startups grow</p>
-                        <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                <path fill="#515151"
-                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                </path>
-                            </svg>We understand your unique needs
-                        </p>
-                        <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                <path fill="#515151"
-                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                </path>
-                            </svg>We build customized solutions for long-term success
-                        </p>
-                        <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                <path fill="#515151"
-                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                </path>
-                            </svg>We mold our processes and teams according to your needs
-                        </p>
-                        <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                <path fill="#515151"
-                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                </path>
-                            </svg>We understand your pain-points and deliver solutions accordingly
-                        </p>
-                        <p class="block animate__animated" data-animation="animate__fadeInRightBig"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                            <path fill="#515151"
-                                d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                            </path>
-                        </svg>We are technology experts and build a synergy with domain experts like you
-                    </p>
               
-                          <!-- Continue adding more points similarly -->
+                        <!-- Bullet Points with Icons -->
+                        <div class="our-approach_our_approach__inner__list__kc1qr">
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> Focused on your growth - case in point helping startups grow
+                          </p>
+              
+                          <!-- Other bullet points similarly styled -->
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> We understand your unique needs
+                          </p>
+              
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> We build customized solutions for long-term success
+                          </p>
+              
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> We mold our processes and teams according to your needs
+                          </p>
+              
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> We understand your pain-points and deliver solutions accordingly
+                          </p>
+              
+                          <p class="block animate__animated" data-animation="animate__fadeInRightBig" style="font-size: 16px; margin-bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none" style="vertical-align: middle;">
+                              <path fill="#515151"
+                                    d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125"></path>
+                            </svg> We are technology experts and build a synergy with domain experts like you
+                          </p>
               
                         </div>
                       </div>
               
                       <!-- Right Section (Image) -->
                       <div style="width: 25%; flex-basis: 25%; margin-bottom: 20px; margin-top: 130px;">
-                        <img src="images/40752-removebg-preview.png" alt="" style="width: 100%; height: auto;" class="block animate__animated" data-animation="animate__flipInY">
+                        <img src="images/40752-removebg-preview.png" alt="Outsourcing" style="width: 100%; height: auto;" class="block animate__animated" data-animation="animate__flipInY">
                       </div>
                     </div>
                   </div>

@@ -29,12 +29,7 @@
       width: 100%; /* Make images take 100% width */
     }
 
-    .service h3, 
-    .service-details, 
-    .central-cloud, 
-    h2.global-title {
-      display: none; /* Hide titles and details */
-    }
+ 
 
     .schedule-call_schedule_call__inner__ZjUkj {
       background-image: none; /* Optional: Remove background image on small screens */
@@ -43,6 +38,66 @@
   @media (max-width:450px) {
         .contact-btn{display: none;}
     }
+    /* General adjustments for mobile */
+@media (max-width: 640px) {
+  /* Remove excess padding and margins */
+  .schedule-call_schedule_call__container___cogb {
+    padding: 0;
+    margin: 0;
+  }
+  .margin-whyus{margin-bottom: -100px;}
+
+  /* Adjust the inner container and background image */
+  .schedule-call_schedule_call__inner__ZjUkj {
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+    height: auto;
+    padding: 20px 10px; /* Reduce padding on mobile */
+  }
+
+  /* Hide the central cloud on mobile (as it's already hidden in your markup) */
+  .central-cloud {
+    display: none;
+  }
+
+  /* Stack the services vertically and adjust gaps */
+  .service-container {
+    grid-template-columns: 1fr; /* Stack in a single column */
+    gap: 16px; /* Reduce gap between services */
+  }
+
+  /* Remove unnecessary padding around each service */
+  .service {
+    padding: 10px 0;
+  }
+
+  /* Adjust the service details layout */
+  .service-details {
+    padding: 10px;
+  }
+
+  /* Center the icons and make them smaller */
+  .service .icon img {
+    display: block;
+    margin: 0 auto;
+    width: 80px; /* Adjust size for smaller screens */
+  }
+
+  /* Adjust text size for mobile */
+  .service h3, .service-details h2 {
+    font-size: 1.2rem; /* Reduce font size */
+    text-align: center; /* Center align for better mobile readability */
+  }
+
+  /* Reduce padding within the content for better use of space */
+  .service-details p {
+    margin: 0;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}
+
   </style>
     
 </head>
@@ -84,10 +139,10 @@
     <!-- about -->
 <div>
     <div class="">
-      <section class="schedule-call_schedule_call__T0597">
-        <div class="schedule-call_schedule_call__container___cogb">
-          <div class="schedule-call_schedule_call__inner__ZjUkj bg-cover bg-center" 
-               style="background-image: url('images/background-img-about.jpg'); min-height: 100vh;">
+      <section class="schedule-call_schedule_call__T0597 ">
+        <div class="schedule-call_schedule_call__container___cogb ">
+          <div class="schedule-call_schedule_call__inner__ZjUkj bg-cover bg-center " 
+               style="background-image: url('images/background-img-about.jpg'); ">
             <div class="container">
   
               <!-- Central Circle for Why Us (Hidden on mobile) -->

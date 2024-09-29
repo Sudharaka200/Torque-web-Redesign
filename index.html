@@ -23,6 +23,9 @@
     .animate__animated {
       animation-duration: 1s; /* Slows down to 2 seconds */
     }
+    @media (max-width:450px) {
+        .contact-btn{display: none;}
+    }
     </style>
 </head>
 
@@ -54,7 +57,7 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
+            <div class="animate__animated animate__fadeInRight contact-btn">
                 <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                   Chat With Us</a>
             </div>
@@ -428,9 +431,13 @@
                             <p>Your Next <strong>Great App</strong> Awaits</p>
                         </h2>
                         <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceIn">Let's discuss how Torque Software can help bring your project to life.</p>
-                        <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__heartBeat"><a href="contact.html"><button
-                                    class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
-                    </div>
+                        <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
+                            <a href="contact.html">
+                                <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300">
+                                    <span>Schedule a Call Today</span>
+                                </button>
+                            </a>
+                        </div>                        
                 </div>
             </section>
         </div>

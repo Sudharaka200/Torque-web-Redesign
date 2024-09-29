@@ -24,6 +24,25 @@
     .animate__animated {
       animation-duration: 1s; /* Slows down to 2 seconds */
     }
+    @media (max-width: 450px) {
+    .service-container .icon img {
+      width: 100%; /* Make images take 100% width */
+    }
+
+    .service h3, 
+    .service-details, 
+    .central-cloud, 
+    h2.global-title {
+      display: none; /* Hide titles and details */
+    }
+
+    .schedule-call_schedule_call__inner__ZjUkj {
+      background-image: none; /* Optional: Remove background image on small screens */
+    }
+  }
+  @media (max-width:450px) {
+        .contact-btn{display: none;}
+    }
   </style>
     
 </head>
@@ -56,93 +75,85 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
+            <div class="animate__animated animate__fadeInRight contact-btn">
                 <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                   Chat With Us</a>
             </div>
         </nav>
     </div>
     <!-- about -->
-    <div>
-        <div class="">
-          <section class="schedule-call_schedule_call__T0597" >
-            <div class="schedule-call_schedule_call__container___cogb" >
-              <div class="schedule-call_schedule_call__inner__ZjUkj" style="background-image: url(images/background-img-about.jpg);">
-                <div class="container">
-                  
-                  <!-- Central Circle for Why Us -->
-                  <div class="central-cloud">
-                    <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" >
-                        <p><strong>Why Us</strong>
-                        </p>
-                    </h2>
+<div>
+    <div class="">
+      <section class="schedule-call_schedule_call__T0597">
+        <div class="schedule-call_schedule_call__container___cogb">
+          <div class="schedule-call_schedule_call__inner__ZjUkj bg-cover bg-center" 
+               style="background-image: url('images/background-img-about.jpg'); min-height: 100vh;">
+            <div class="container">
+  
+              <!-- Central Circle for Why Us (Hidden on mobile) -->
+              <div class="central-cloud hidden sm:block">
+                <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown">
+                  <p><strong>Why Us</strong></p>
+                </h2>
+              </div>
+  
+              <!-- Services positioned around the central cloud (Hidden on mobile) -->
+              <div class="service-container hidden sm:grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Cloud Computing -->
+                <div class="service" id="service1">
+                  <div class="icon animate__animated animate__fadeInDown">
+                    <img src="images/experts-on-call.png" class="why-img1" alt="Cloud Computing">
                   </div>
-      
-                  <!-- Services positioned around the central cloud -->
-                  <div class="service-container">
-                    <!-- Service 1: Cloud Computing -->
-                    <div class="service" id="service1">
-                      <div class="icon animate__animated animate__fadeInDown">
-                        <img src="images/experts-on-call.png" alt="Cloud Computing">
-                      </div>
-                      <h3 class="animate__animated animate__fadeInUp"><strong>Experts on call</strong></h3>
-                      <div style="z-index: 10;" class="service-details">
-                        <div>
-                            <img src="images/experts-on-call.png" alt="" style="width: 20%;">
-                            <h2 class="" data-animation="">
-                                <p><strong>Experts on call</strong> </p>
-                            </h2>
-                            <p class="" data-animation="">We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team</p>
-                        </div>
-                      </div>
-
+                  <h3 class="animate__animated animate__fadeInUp"><strong>Experts on call</strong></h3>
+                  <div class="service-details">
+                    <div>
+                      <img src="images/experts-on-call.png" alt="" class="w-1/5">
+                      <h2 class=""><p><strong>Experts on call</strong></p></h2>
+                      <p>We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done.</p>
                     </div>
-      
-                    <!-- Service 2: Data Management -->
-                    <div class="service" id="service2">
-                      <div class="icon animate__animated animate__fadeInDown">
-                        <img src="images/suctom-team-building.png" alt="Data Management">
-                      </div>
-                      <h3 class="animate__animated animate__fadeInUp"><strong>Custom team building</strong></h3>
-                      <div style="z-index: 10;" class="service-details">
-                        <div>
-                            <img src="images/suctom-team-building.png" alt="" style="width: 20%;">
-                            <h2 class="" data-animation="">
-                                <p><strong>Custom team building</strong> </p>
-                            </h2>
-                            <p class="" data-animation="">We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team.
-                            </p>
-                            <br><br>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+  
+                <!-- Service 2: Data Management -->
+                <div class="service" id="service2">
+                  <div class="icon animate__animated animate__fadeInDown">
+                    <img src="images/suctom-team-building.png" class="why-img1" alt="Data Management">
+                  </div>
+                  <h3 class="animate__animated animate__fadeInUp"><strong>Custom team building</strong></h3>
+                  <div class="service-details">
+                    <div>
+                      <img src="images/suctom-team-building.png" alt="" class="w-1/5">
+                      <h2 class=""><p><strong>Custom team building</strong></p></h2>
+                      <p>We pair you with developers and designers whose talents specifically match your individual needs. Plus, we provide free project management tools to communicate and get in sync with your team.</p>
                     </div>
-      
-                    <!-- Service 3: Software Development -->
-                    <div class="service" id="service3">
-                      <div class="icon animate__animated animate__fadeInDown">
-                        <img src="images/quality-gurantee.png" alt="Software Development">
-                      </div>
-                      <h3 class="animate__animated animate__fadeInUp"><strong>Quality guarantee</strong></h3>
-                      <div style="z-index: 10;" class="service-details">
-                        <div>
-                            <img src="images/quality-gurantee.png" alt="" style="width: 20%;">
-                            <h2 class="" data-animation="">
-                                <p><strong>Quality guarantee</strong> </p>
-                            </h2>
-                            <p class="" data-animation="">All of this is backed with ironclad NDAs. We don’t share the nature of your work with anyone. Transparency is a given, and we share detailed timesheets and work reports. And finally, you get a no-questions -asked money back guarantee. Cancel at any time.
-                            </p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+  
+                <!-- Service 3: Software Development -->
+                <div class="service" id="service3">
+                  <div class="icon animate__animated animate__fadeInDown">
+                    <img src="images/quality-gurantee.png" class="why-img1" alt="Software Development">
+                  </div>
+                  <h3 class="animate__animated animate__fadeInUp"><strong>Quality guarantee</strong></h3>
+                  <div class="service-details">
+                    <div>
+                      <img src="images/quality-gurantee.png" alt="" class="w-1/5">
+                      <h2 class=""><p><strong>Quality guarantee</strong></p></h2>
+                      <p>All of this is backed with ironclad NDAs. Transparency is a given, and we share detailed timesheets and work reports. You get a money-back guarantee. Cancel at any time.</p>
                     </div>
-      
                   </div>
                 </div>
               </div>
+              <!-- End Service Container -->
+  
             </div>
-          </section>
+          </div>
         </div>
-      </div>
-    <!-- about -->
+      </section>
+    </div>
+  </div>
+  <!-- about -->
+  
      <br>
      <br>
      <!-- about details -->
@@ -208,9 +219,13 @@
                                 <p>Your Next <strong>Great App</strong> Awaits</p>
                             </h2>
                             <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceInLeft">Let's discuss how Torque Software can help bring your project to life.</p>
-                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__bounceIn"><a href="contact.html"><button
-                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
-                        </div>
+                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
+                                <a href="contact.html">
+                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300">
+                                        <span>Schedule a Call Today</span>
+                                    </button>
+                                </a>
+                            </div>                            
                     </div>
                 </section>
             </div>

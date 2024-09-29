@@ -34,6 +34,9 @@
       margin: 0 auto 20px !important;
     }
   }
+  @media (max-width:450px) {
+        .contact-btn{display: none;}
+    }
   </style>
 </head>
 
@@ -65,7 +68,7 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
+            <div class="animate__animated animate__fadeInRight contact-btn">
                 <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                   Chat With Us</a>
             </div>
@@ -116,9 +119,9 @@
                                     </h2>
                       
                                     <!-- Logo Container -->
-                                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0 auto; max-width: 600px; flex-wrap: wrap;">
-                                      <img src="images/png-transparent-apple-logo.png" alt="Apple Logo" style="width: 45%; margin-bottom: 20px; flex: 1 1 auto;">
-                                      <img src="images/android-logo-0-.png" alt="Android Logo" style="width: 45%; margin-bottom: 20px; flex: 1 1 auto;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 0 auto; max-width: 600px; flex-wrap: wrap;">
+                                      <img src="images/apple-logo2.png" alt="Apple-android-Logo" class="Apple-android-Logo" style=" margin-bottom: 20px; flex: 1 1 auto; width: 5px">
+                                      <img src="images/android-logo2.png" alt="Apple-android-Logo" class="Apple-android-Logo" style=" margin-bottom: 20px; flex: 1 1 auto; width: 5px">
                                     </div>
                       
                                   </div>
@@ -174,7 +177,7 @@
                     </div>
                 </section>
             </div>
-            <div class="about_about__valuesContainer__1wFcz block animate__animated" data-animation="animate__bounceIn" style="margin-top: -120px;"> 
+            <div class="about_about__valuesContainer__1wFcz block animate__animated" data-animation="animate__bounceIn"> 
                 <section class="global-container">
                     <div class="our-values-section_our_values_section__7US1j">
                         <div class="our-values-section_values_list__zyn6C">
@@ -290,9 +293,13 @@
                                 <p>Your Next <strong>Great App</strong> Awaits</p>
                             </h2>
                             <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceInLeft">Let's discuss how Torque Software can help bring your project to life.</p>
-                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated" data-animation="animate__bounceIn"><a href="contact.html"><button
-                                        class="button_button__LTUUI"><span>Schedule a Call Today</span></button></a></div>
-                        </div>
+                            <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
+                                <a href="contact.html">
+                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300">
+                                        <span>Schedule a Call Today</span>
+                                    </button>
+                                </a>
+                            </div>                                                       
                     </div>
                 </section>
             </div>

@@ -22,6 +22,9 @@
     .animate__animated {
       animation-duration: 1s; /* Slows down to 2 seconds */
     }
+    @media (max-width:450px) {
+        .contact-btn{display: none;}
+    }
   </style>
 </head>
 
@@ -53,7 +56,7 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html" class="active">Contact Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight">
+            <div class="animate__animated animate__fadeInRight contact-btn">
                 <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                   Chat With Us</a>
             </div>

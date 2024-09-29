@@ -27,15 +27,22 @@
   .animate__animated {
       animation-duration: 1s; /* Slows down to 2 seconds */
     }
-    @media (max-width:450px) {
+    @media (max-width:770px) {
         .contact-btn{display: none;}
+        .dropdown-mobile{margin-left: 70px; margin-top: -20px;}
+    }
+    @media (min-width:771px) {
+        .chat-mobile{display: none;}
+    }
+    @media (min-width:400px) {
+        .html-margin{margin-top: 130px;}
     }
   </style>
 </head>
 
 <body class="layout_layout__MEILQ" >
     <div style="z-index: 10001; " class="header_header__container__3N0Ku " >
-        <nav class="nav-test " style=" height: 90px; background-color: rgba(255, 255, 255, 0.9);">
+        <nav class="nav-test " style=" height: 90px;">
             <div class="logo-container-test"style="">
                 <a href="index.html"><img src="images/logo.png" alt="Logo" style="width: 100px; height: 50px;"></a>
             </div>
@@ -49,23 +56,24 @@
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
                     <a href="#" class="active">Services</a>
-                    <ul class="dropdown">
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;" ><a href="frontenddevelopment.html" class="active">Front End Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="webdevelopment.html">Web Development</a></li>
-                        <li class="header_header__links__link__GHE7N nav-test-li " style="list-style: none;"><a href="mobileappdevelopment.html">Mobile App Development</a></li>
+                    <ul class="dropdown dropdown-mobile">
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="frontenddevelopment.html" class="active">Front End Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="webdevelopment.html">Web Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="mobileappdevelopment.html">Mobile App Development</a></li>
                     </ul>
                 </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="contact.html">Contact Us</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown" style="z-index: 12000;"></li>
+                <li class="nav-test-li chat-mobile"><a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">Chat With Us</a></li>
             </ul>
-            <div class="animate__animated animate__fadeInRight contact-btn">
-                <a href="contact.html" class="chat-btn" style="color: #fff; display: inline-block; width: 100%; max-width: 250px; height: auto; padding: 10px 20px; font-size: 1rem; text-align: center;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                  Chat With Us</a>
-            </div>
-        </nav>
+            <div class="animate__animated animate__fadeInRight contact-btn" >
+                <a href="contact.html" class="chat-btn" style="display: block; background-color: #d8040c; color: #fff; padding: 15px 40px; font-size: 1.5rem; text-align: center; border-radius: 30px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);">
+                  Chat With Us
+                </a>
+              </div>
+         </nav>
     </div>
     <!-- video -->
         <div class="video-container block animate__animated" data-animation="animate__fadeIn" style="position: absolute; top: 0; left: 0;">
@@ -157,7 +165,7 @@
                             <!-- HTML5 Section -->
                             <div style="width: 48%; min-width: 300px; flex: 1; box-sizing: border-box;">
                             <div class="block animate__animated" data-animation="animate__fadeInRight" style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
-                                <img src="images/html-logo.png" alt="" style="max-width: 100%; height: auto; margin-top: 130px;">
+                                <img src="images/html-logo.png" alt="" style="max-width: 100%; height: auto; " class="html-margin">
                             </div>
                             <div>
                                 <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInRight" style="font-size: larger; text-align: right;">
@@ -321,11 +329,11 @@
                             <p class="global-subtitle schedule-call_schedule_call__inner__subtitle__UV7R5 block animate__animated" data-animation="animate__bounceInLeft">Let's discuss how Torque Software can help bring your project to life.</p>
                             <div class="schedule-call_schedule_call__inner__btn__hD2LL block animate__animated sm:text-center md:text-right lg:text-left" data-animation="animate__bounceIn">
                                 <a href="contact.html">
-                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300">
+                                    <button class="button_button__LTUUI py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 btn-shedule-a-call" style="height: 60px;">
                                         <span>Schedule a Call Today</span>
                                     </button>
                                 </a>
-                            </div>                            
+                            </div>                           
                     </div>
                 </section>
             </div>

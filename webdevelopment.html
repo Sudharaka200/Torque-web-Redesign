@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/card2.css">
-    <link rel="stylesheet" href="css/animatedvideos.css">
+    <!-- <link rel="stylesheet" href="css/animatedvideos.css"> -->
     <style>
         .block {
         opacity: 0; /* Initially hidden */
@@ -80,6 +80,43 @@
     @media (min-width:771px) {
         .chat-mobile{display: none;}
     }
+    /* Container and Logo Styling */
+.custom-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.client-logo-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.company-logo {
+    height: auto;
+    margin-right: 20px;
+}
+.logo-overflow-hidden {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Arrow Button Styling */
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+#left-arrow {
+    left: 0;
+}
+#right-arrow {
+    right: 0;
+}
     
   </style>
 </head>
@@ -119,33 +156,7 @@
               </div>
          </nav>
     </div>
-            <!-- video -->
-            <div class="video-container block animate__animated" data-animation="animate__fadeIn" style="position: absolute; top: 0; left: 0;">
-                <!-- Desktop Video -->
-                <video autoplay loop muted plays-inline class="background-clip desktop-video">
-                    <source src="images/videos/webdevelopmenntv1.mp4">
-                </video>
-            
-                <!-- Tablet Video -->
-                <video autoplay loop muted plays-inline class="background-clip tablet-video">
-                    <source src="images/videos/webdevelopmentv2.mp4">
-                </video>
-            
-                <!-- Mobile Video -->
-                <video autoplay loop muted plays-inline class="background-clip mobile-video">
-                    <source src="images/videos/webdevelopmentv3.mp4">
-                </video>
-            
-                <!-- Dark Overlay -->
-                <div class="dark-overlay"></div>
-            
-                <!-- Overlay Content -->
-                <div class="content">
-                    <h1 class=" animate__animated block" data-animation="animate__fadeInDown">Web Development </h1>
-                    <a href="contact.html" class="block animate__animated" data-animation="animate__fadeInDown">Chat With Us</a>
-                </div>
-            </div>
-        <!-- video -->
+           
     <main class="layout_layout__inner__Ln18k webapp-margin">
         <div>
             <div class="">
@@ -277,38 +288,43 @@
                                                 </div>
                                             </div>
                                 </div>                        </div>
-                        <div>
-                            <h4 data-animation="animate__fadeInDown" class="block animate__animated our-values-section_values_list__title__sJ7Bn" style="font-size: 50px;text-align: center;"><strong>Technologies</strong></h4>
-                            <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl" style="font-size: 25px; text-align: center;">
-                                Languages & Frameworks:</p></div>
+                                <div>
+                                    <h4 data-animation="animate__fadeInDown" 
+                                        class="block animate__animated our-values-section_values_list__title__sJ7Bn" 
+                                        style="font-size: 50px;text-align: center;">
+                                        <strong>Technologies</strong>
+                                    </h4>
+                                    <p data-animation="animate__fadeInUp"  
+                                       class="block animate__animated our-values-section_values_list__description__cwHMl" 
+                                       style="font-size: 25px; text-align: center;">
+                                       Languages & Frameworks:
+                                    </p>
+                                </div>
                                 <br><br>
-                                <div class="custom-container" style="width: 100%; overflow: hidden;">
+                                <div class="custom-container" style="width: 100%; overflow: hidden; position: relative;">
                                     <section class="section-logos">
-                                      <div class="w-layout-blockcontainer base-container no-padding w-container">
-                                        <div class="logo-overflow-hidden">
-                                          <div class="client-logo-wrapper" style="
-                                            display: flex; 
-                                            width: max-content; 
-                                            animation: scroll 30s linear infinite; /* Infinite scrolling */
-                                          ">
-                                            <!-- Logos (Duplicated for seamless effect) -->
-                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                            
-                                            <!-- Duplicate logos to ensure a seamless scroll -->
-                                            <img src="images/php-2.png" loading="lazy" alt="logo" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/dotnet.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/java-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                            <img src="images/python-1.png" loading="lazy" alt="" class="company-logo" style=" margin-right: 20px;">
-                                          </div>
+                                        <div class="w-layout-blockcontainer base-container no-padding w-container">
+                                            <div class="logo-overflow-hidden" style="overflow: hidden; white-space: nowrap;">
+                                                <div class="client-logo-wrapper" id="scroll-container" style="display: flex;">
+                                                    <!-- Logos -->
+                                                    <img src="images/php-2.png" alt="PHP" class="company-logo" style="width: 150px;">
+                                                    <img src="images/dotnet.png" alt="DotNet" class="company-logo" style="width: 150px;">
+                                                    <img src="images/java-1.png" alt="Java" class="company-logo" style="width: 150px;">
+                                                    <img src="images/python-1.png" alt="Python" class="company-logo" style="width: 150px;">
+                                                    <!-- Duplicate logos for seamless loop -->
+                                                    <img src="images/php-2.png" alt="PHP" class="company-logo" style="width: 150px;">
+                                                    <img src="images/dotnet.png" alt="DotNet" class="company-logo" style="width: 150px;">
+                                                    <img src="images/java-1.png" alt="Java" class="company-logo" style="width: 150px;">
+                                                    <img src="images/python-1.png" alt="Python" class="company-logo" style="width: 150px;">
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
                                     </section>
-                                  </div>
-                        </div>
-
+                                    <!-- Left and Right Arrow Controls -->
+                                    <button id="left-arrow" class="arrow-btn">◀</button>
+                                    <button id="right-arrow" class="arrow-btn">▶</button>
+                                </div>
+                                
                     </div>
                 </section>
             </div>
@@ -438,6 +454,35 @@
           blocks.forEach(block => {
             observer.observe(block);
           });
+        });
+      </script>
+      <script>
+        const scrollContainer = document.getElementById('scroll-container');
+        const logos = document.querySelectorAll('.company-logo');
+        const scrollStep = logos[0].offsetWidth + 20; // Get the width of the logo including margin
+        let scrollAmount = 0; // Track how far we've scrolled
+
+        // Clone logos to create a seamless loop
+        const cloneLogos = () => {
+            scrollContainer.innerHTML += scrollContainer.innerHTML; // Duplicate content
+        };
+
+        cloneLogos(); // Call the function to clone the logos at the start
+
+        document.getElementById('left-arrow').addEventListener('click', () => {
+            scrollAmount -= scrollStep;
+            if (scrollAmount <= 0) {
+                scrollAmount = scrollContainer.scrollWidth / 2; // Reset to the right side for infinite scroll
+            }
+            scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
+        });
+
+        document.getElementById('right-arrow').addEventListener('click', () => {
+            scrollAmount += scrollStep;
+            if (scrollAmount >= scrollContainer.scrollWidth / 2) {
+                scrollAmount = 0; // Reset to the left side for infinite scroll
+            }
+            scrollContainer.style.transform = `translateX(-${scrollAmount}px)`;
         });
       </script>
 </body>

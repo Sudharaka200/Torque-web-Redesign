@@ -29,6 +29,74 @@
     @media (min-width:771px) {
         .chat-mobile{display: none;}
     }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    text-align: center;
+    font-size: 20px;
+}
+
+.heart {
+    color: red;
+    font-size: 24px;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-group textarea {
+    width: 100%;
+    height: 100px;
+}
+
+button {
+    background-color: #d8040c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
   </style>
 </head>
 
@@ -65,128 +133,94 @@
             <section class="contact-hero-section_contact_hero_section__0BuD_">
                 <div class="contact-hero-section_contact_hero_section__container__fLSHT">
                     <div class="contact-hero-section_contact_hero_section__inner__paQwr">
-                        <section
-                            class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
+                        
                             <div class="overflow-hidden contact-hero-section_contact_hero_section__top__title__gg0i5">
                                 <h1 class="global-title overflow-hidden block animate__animated" data-animation="animate__fadeInDownBig">
                                     <p>Ready? Us too.</p>
                                 </h1>
                             </div>
                             <div class="overflow-hidden contact-hero-section_contact_hero_section__top__sub__cd5Jn">
-                                <p class="global-subtitle block animate__animated" data-animation="animate__fadeInUp">
+                                <p class="global-subtitle block animate__animated" data-animation="animate__fadeInUp" style="font-size: 18px;">
                                     Select your preferred communication below to speak with our team. We’ll help answer
                                     any questions you might have.</p>
-                            </div>
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o">
-                                    <!-- form -->
-                                    <div class="block animate__animated " data-animation="animate__fadeIn">
-                                        <h1 style="font-size: 24px; margin-bottom: 20px;">
-                                            Request a free consultation and get a no-obligation proposal for your project within 12 hours
-                                          </h1>
-                                        
-                                          <form style="max-width: 800px; margin: 0 auto;">
-                                            
-                                            <!-- Name and Email Fields -->
-                                            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                                              <div style="width: 48%;">
-                                                <label for="name" style="display: block; margin-bottom: 5px; font-size: 14px;">Your Name *</label>
-                                                <input type="text" id="name" placeholder="Your name *" required
-                                                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
-                                              </div>
-                                              <div style="width: 48%;">
-                                                <label for="email" style="display: block; margin-bottom: 5px; font-size: 14px;">Email ID *</label>
-                                                <input type="email" id="email" placeholder="Email ID *" required
-                                                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
-                                              </div>
-                                            </div>
-                                        
-                                            <!-- Mobile and Company Fields -->
-                                            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                                              <div style="width: 48%;">
-                                                <label for="phone" style="display: block; margin-bottom: 5px; font-size: 14px;">Mobile Number</label>
-                                                <input type="tel" id="phone" placeholder="Mobile number"
-                                                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
-                                              </div>
-                                              <div style="width: 48%;">
-                                                <label for="company" style="display: block; margin-bottom: 5px; font-size: 14px;">Company Name</label>
-                                                <input type="text" id="company" placeholder="Company name"
-                                                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
-                                              </div>
-                                            </div>
-                                        
-                                            <!-- Message Field -->
-                                            <div style="margin-bottom: 20px;">
-                                              <label for="message" style="display: block; margin-bottom: 5px; font-size: 14px;">Message/Requirements *</label>
-                                              <textarea id="message" placeholder="Message/requirements *" required
-                                                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; height: 100px;"></textarea>
-                                            </div>
-                                        
-                                            <!-- Submit Button -->
-                                            <div style="text-align: center;">
-                                                <button type="submit"
-                                                class="contact-hero-section_contact_hero_section__item__btn__hYCHT block animate__animated" data-animation="animate__fadeInUp">Send your request                                            </button>
-                                            </div>
-                                        
-                                            <!-- Disclaimer -->
-                                            <div style="font-size: 12px; color: #555; margin-top: 10px; text-align: center;">
-                                              Your privacy is guaranteed. We hate spam as much as you do.
-                                            </div>
-                                            
-                                          </form>
-                                    </div>
-                                <!-- form -->
-                            </div>
-                            <div class="contact-hero-section_contact_hero_section__item__z_u0o">
-                                <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU">
-                                    <img
-                                        alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
-                                        data-nimg="1" style="color:transparent" src="images/contact2.svg" class="block animate__animated" data-animation="animate__fadeInRight"></div>
-                                <div>
-                                    <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInRight">Write to
-                                        us</h3>
-                                    <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated" data-animation="animate__fadeInRight">Fill
-                                        out our contact form and we’ll reach back out to you within 24 hours.</p>
-                                </div><button onclick="window.location.href='mailto:someone@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20inquire%20about...'"
-                                    class="contact-hero-section_contact_hero_section__item__btn__hYCHT block animate__animated" data-animation="animate__fadeInUp">Contact
-                                    Us</button>
-                                    <br><br><br>
-                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInRight">
-                                             Address   </h3>
-                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated" data-animation="animate__fadeInRight">
-                                                Suite # 4, KDA,<br>
-                                                Block A,<br>
-                                                North Nazimabad,<br>
-                                                Karachi, Pakistan
-                                                <br><br>
-                                                Development office: <br>
-                                                C-124 Block A <br>
-                                                North Nazimabad, <br>
-                                                Karachi, Pakistan <br>
-                                            </p>    
-                                    </div>
-                            </div>
-                        </section>
+                            </div> 
                     </div>
                 </div>
             </section>
+            <div class="about_about__callContainer__mtc7C" style="margin-top: 30px;">
+                <section class="schedule-call_schedule_call__T0597">
+                    <div class="schedule-call_schedule_call__container___cogb">
+                        <div class="schedule-call_schedule_call__inner__ZjUkj">
+                            <div class="stats-container">
+                                <!-- form -->
+                                <div class="container">
+                                    <h1 style="font-size: 25px;" class="animate__animated block" data-animation="animate__fadeInDown">Get in touch with us!</h1>
+                                    <p class="info block animate__animated" data-animation="animate__fadeInDown" style="font-size: 18px;">Request a free consultation and get a no obligation proposal for your project within <strong>12 hours</strong></p>
+                            
+                                    <form action="#" method="post" class="contact-form block animate__animated" data-animation="animate__fadeInUp">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Your name *" required>
+                                            <input type="email" placeholder="Email ID *" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="tel" placeholder="Mobile number" required>
+                                            <input type="text" placeholder="Company name">
+                                        </div>
+                                        <div class="input-group">
+                                            <textarea placeholder="Message/requirements *" required></textarea>
+                                        </div>
+                                        <button type="submit">Send your request</button>
+                                    </form>
+                                </div>
+                                <!-- form -->
+                            </div>                         
+                    </div>
+                </section>
+            </div>
+            <div class="about_about__callContainer__mtc7C" style="margin-top: 30px;">
+                <section class="schedule-call_schedule_call__T0597">
+                    <div class="schedule-call_schedule_call__container___cogb">
+                        <div class="schedule-call_schedule_call__inner__ZjUkj">
+                            <div class="stats-container">
+                                <!-- Others -->
+                                    <div>
+                                        <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInRight" style="font-size: 25px;">
+                                            Address   </h3><br>
+                                           <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated" data-animation="animate__fadeInRight" style="font-size: 18px;">
+                                               Suite # 4, KDA,<br>
+                                               Block A,<br>
+                                               North Nazimabad,<br>
+                                               Karachi, Pakistan
+                                               <br><br>
+                                               Development office: <br>
+                                               C-124 Block A <br>
+                                               North Nazimabad, <br>
+                                               Karachi, Pakistan <br>
+                                           </p>    
+                                    </div>
+                                <!-- Others -->
+                            </div>                         
+                    </div>
+                </section>
+            </div>
             <div class="contact_contact__container__GISJZ">
                 <section class="global-header-width-container other-contacts_other_contacts__umUOL">
                     <div class="other-contacts_other_contacts__inner__GIpTI">
-                        <h3 class="other-contacts_other_contacts__title__ES41p block animate__animated" data-animation="animate__fadeInLeft">Other contact options</h3>
+                        <h3 class="other-contacts_other_contacts__title__ES41p block animate__animated" data-animation="animate__fadeInLeft" style="font-size: 25px;">Other contact options</h3>
                         <div class="other-contacts_other_contacts__container__P6B9r" style="overflow:hidden">
                             <div class="other-contacts_other_contacts__link__lUvqn block animate__animated" data-animation="animate__fadeInDown">
-                                <h3 class="global-subtitle">
+                                <h3 class="global-subtitle" style="font-size: 25px;">
                                     Email</h3>
                                 <div class="global-subtitle">
                                     <a class="global-subtitle " target="_blank"
-                                        href="mailto:inquiry@torquesoftware.com">inquiry@torquesoftware.com</a></div>
+                                        href="mailto:inquiry@torquesoftware.com"style="font-size: 18px;">inquiry@torquesoftware.com</a></div>
                             </div>
                             <div class="other-contacts_other_contacts__line__1QnnJ"></div>
                             <div class="other-contacts_other_contacts__link__lUvqn block animate__animated" data-animation="animate__fadeInDown">
-                                <h3 class="global-subtitle">
+                                <h3 class="global-subtitle" style="font-size: 25px;">
                                     Phone</h3>
                                 <div class="global-subtitle">
-                                    <a class="global-subtitle" target="_blank" href="tel:(310) 853-2611">(310)
+                                    <a class="global-subtitle" target="_blank" href="tel:(310) 853-2611" style="font-size: 18px;">(310)
                                         853-2611</a></div>
                             </div>
                         </div>

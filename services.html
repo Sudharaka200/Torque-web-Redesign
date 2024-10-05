@@ -40,6 +40,65 @@
     @media (min-width:400px) {
         .html-margin{margin-top: 130px;}
     }
+ .stats-container {
+    display: flex;
+    justify-content: center; /* Aligns the items horizontally at the center */
+    align-items: center; /* Aligns the items vertically at the center */
+    flex-wrap: wrap; /* Ensures that items wrap on smaller screens */
+    gap: 20px; /* Space between the stat items */
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width for small screens */
+    max-width: 200px; /* Limits item width for larger screens */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.stat-item img {
+    width: 50%; /* Ensures image is responsive */
+    height: ;
+}
+
+.stat-item h1 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.stat-item p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsive layout for small devices (mobile screens) */
+@media (max-width: 599px) {
+    .stat-item {
+        width: 100%; /* Full width, one item per row */
+    }
+}
+
+/* Responsive layout for tablets (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .stat-item {
+        width: calc(50% - 40px); /* Two items per row */
+    }
+}
+
+/* Layout for larger screens (900px and up, desktop view) */
+@media (min-width: 900px) {
+    .stat-item {
+        width: calc(25% - 40px); /* Four items per row on desktop */
+    }
+}
+
+    
   </style>
 </head>
 
@@ -101,7 +160,7 @@
                                         <p>Agile Methodology</p>
                                     </div>
                                     <div class="stat-item">
-                                        <img src="images/abouticon2.png" alt="Repeat Business">
+                                        <img src="images/abouticon2.png" alt="Repeat Business" style="margin-top: 25px;">
                                         <h1>80%</h1>
                                         <p>Repeat Business</p>
                                     </div>
@@ -111,14 +170,16 @@
                                         <p>IP Protection</p>
                                     </div>
                                     <div class="stat-item">
-                                        <img src="images/abouticon4.png" alt="Client Satisfaction">
+                                        <img src="images/abouticon4.png" alt="Client Satisfaction" style="margin-top: 20px;">
                                         <h1>100%</h1>
                                         <p>Client Satisfaction</p>
                                     </div>
                                 </div>                         
+                            </div>
                         </div>
                     </section>
                 </div>
+                
                   <!-- Recomandation -->
                   <!-- FrontEnd Development -->
                   <div class="about_about__valuesContainer__1wFcz">

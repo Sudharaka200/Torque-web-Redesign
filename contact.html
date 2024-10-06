@@ -96,7 +96,92 @@ button {
 button:hover {
     background-color: darkred;
 }
+@media (max-width:800px) {
+    .img-contact{display: none;}
+}
+@media (max-width: 768px) {
+  /* Ensure each item takes full width on small screens */
+  .contact-hero-section_contact_hero_section__item__z_u0o {
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between items */
+  }
 
+  /* Ensure the inner addresses stack vertically */
+  .address-container {
+    flex-direction: column;
+  }
+
+  .address {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .address {
+    width: 48%;
+    padding: 20px;
+  }
+
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .address-container {
+      flex-direction: column; /* Stack the items vertically */
+    }
+
+    .address {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Add some spacing between the items */
+    }
+  }
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .address-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address {
+    width: 48%;
+  }
+
+  /* Media Query for Mobile (two rows) */
+  @media (max-width: 768px) {
+    .contact-item {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .address-container {
+      flex-direction: column; /* Stack the address sections */
+    }
+
+    .address {
+      width: 100%; /* Full width for each address block */
+      margin-bottom: 20px; /* Space between address blocks */
+    }
+  }
+@media (min-width:1375px) {
+    .contact-btn-margin{margin-top: 30px;}
+}
+@media (max-width:1375px) {
+    .contact-btn-margin{margin-top: 50px;}
+}
   </style>
 </head>
 
@@ -140,7 +225,7 @@ button:hover {
                                 </h1>
                             </div>
                             <div class="overflow-hidden contact-hero-section_contact_hero_section__top__sub__cd5Jn">
-                                <p class="global-subtitle block animate__animated" data-animation="animate__fadeInUp" style="font-size: 18px;">
+                                <p class="global-subtitle block animate__animated Description-font" data-animation="animate__fadeInUp" style="font-size: 18px;">
                                     Select your preferred communication below to speak with our team. We’ll help answer
                                     any questions you might have.</p>
                             </div> 
@@ -155,7 +240,7 @@ button:hover {
                                 <!-- form -->
                                 <div class="container">
                                     <h1 style="font-size: 25px;" class="animate__animated block" data-animation="animate__fadeInDown">Get in touch with us!</h1>
-                                    <p class="info block animate__animated" data-animation="animate__fadeInDown" style="font-size: 18px;">Request a free consultation and get a no obligation proposal for your project within <strong>12 hours</strong></p>
+                                    <p class="info block animate__animated Description-font" data-animation="animate__fadeInDown" style="font-size: 18px;">Request a free consultation and get a no obligation proposal for your project within <strong>12 hours</strong></p>
                             
                                     <form action="#" method="post" class="contact-form block animate__animated" data-animation="animate__fadeInUp">
                                         <div class="input-group">
@@ -182,48 +267,52 @@ button:hover {
                     <div class="schedule-call_schedule_call__container___cogb">
                             <div class="stats-container">
                                <!-- Others -->
-                               <div style="display: flex; justify-content: space-between; width: 100%;">
-                                <div style="width: 48%; padding: 20px;">
-                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o" style="">
-                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU block animate__animated" data-animation="animate__flipInX"><img
-                                                alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
-                                                data-nimg="1" style="color:transparent" src="images/chat.png"></div>
-                                        <div>
-                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInDown" style="font-size: 25px;">Write to
-                                                us</h3>
-                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated" data-animation="animate__fadeInDown" style="font-size: 18px;">Fill
-                                                out our contact form and we’ll reach back out to you within 24 hours.</p>
-                                        </div><button
-                                            class="contact-hero-section_contact_hero_section__item__btn__hYCHT block animate__animated" data-animation="animate__fadeInUp">Contact
-                                            Us</button>
-                                      </div>
-                                      
+                               <div class="contact-section">
+                                <div class="contact-item">
+                                  <div class="contact-hero-section_contact_hero_section__item__z_u0o">
+                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU block animate__animated img-contact" data-animation="animate__flipInX">
+                                      <img alt="Write to us" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/chat.png">
+                                    </div>
+                                    <div>
+                                      <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInDown" style="font-size: 25px;">Write to us</h3>
+                                      <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated Description-font" data-animation="animate__fadeInDown" style="font-size: 18px;">
+                                        Fill out our contact form and we’ll reach back out to you within 24 hours.
+                                      </p>
+                                    </div>
+                                    
+                                    <button class="contact-hero-section_contact_hero_section__item__btn__hYCHT block animate__animated contact-btn-margin" data-animation="animate__fadeInUp">Contact Us</button>
+                                  </div>
                                 </div>
-                                <div style="width: 48%; padding: 20px;">
-                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o" style="">
-                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU block animate__animated" data-animation="animate__flipInX"><img
-                                                alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
-                                                data-nimg="1" style="color:transparent" src="images/location-pin.png"></div>
-                                        <div>
-                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInDown" style="font-size: 25px;">Address </h3>
-                                                <div style="display: flex; justify-content: space-between; width: 100%;">
-                                                    <div style="width: 48%; padding: 20px;">
-                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw animate__animated block" data-animation="animate__fadeInDown" style="font-size: 18px;">Suite # 4, KDA,<br>
-                                                            Block A,<br>
-                                                            North Nazimabad,<br>
-                                                            Karachi, Pakistan</p>
-                                                    </div>
-                                                    <div style="width: 48%; padding: 20px;">
-                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated" data-animation="animate__fadeInDown" style="font-size: 18px;">Development office: <br>
-                                                            C-124 Block A <br>
-                                                            North Nazimabad, <br>
-                                                            Karachi, Pakistan <br></p>
-                                                    </div>
-                                                </div>
+                              
+                                <div class="contact-item">
+                                  <div class="contact-hero-section_contact_hero_section__item__z_u0o">
+                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU block animate__animated img-contact" data-animation="animate__flipInX">
+                                      <img alt="Address" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/location-pin.png">
+                                    </div>
+                                    <div>
+                                      <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K block animate__animated" data-animation="animate__fadeInDown" style="font-size: 25px;">Address</h3>
+                                      <div class="address-container">
+                                        <div class="address">
+                                          <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw animate__animated block Description-font" data-animation="animate__fadeInDown">
+                                            Suite # 4, KDA,
+                                            Block A,
+                                            North Nazimabad,
+                                            Karachi, Pakistan
+                                          </p>
+                                        </div>
+                                        <div class="address">
+                                          <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw block animate__animated Description-font" data-animation="animate__fadeInDown">
+                                            Development office:
+                                            C-124 Block A,
+                                            North Nazimabad,
+                                            Karachi, Pakistan
+                                          </p>
                                         </div>
                                       </div>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
                                <!-- Others -->
                             </div>                         
                     </div>

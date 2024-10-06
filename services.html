@@ -101,6 +101,62 @@
 @media (max-width:500px) {
     .img-block{display: none;}
 }
+/* General styles for mobile responsiveness */
+.contact-hero-section_contact_hero_section__container__fLSHT {
+  display: flex;
+  flex-direction: column; /* Stack items vertically for smaller screens */
+  padding: 20px;
+}
+
+.contact-hero-section_contact_hero_section__item__z_u0o {
+  margin-bottom: 20px;
+}
+
+.contact-hero-section_contact_hero_section__item__btn__hYCHT {
+  width: 100%; /* Ensure buttons take full width on small screens */
+}
+
+/* Media query for devices with width less than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .contact-hero-section_contact_hero_section__inner__paQwr {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 10px;
+  }
+
+  .contact-hero-section_contact_hero_section__item__z_u0o {
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  .contact-hero-section_contact_hero_section__item__title__2jz8K {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+
+  .contact-hero-section_contact_hero_section__item__paragraph__P8Vzw {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .contact-hero-section_contact_hero_section__item__icon__lE8YU img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media query for devices with width less than 480px (small phones) */
+@media (max-width: 480px) {
+  .contact-hero-section_contact_hero_section__item__title__2jz8K {
+    font-size: 1.2rem; /* Further reduce title size for smaller devices */
+  }
+
+  .contact-hero-section_contact_hero_section__item__paragraph__P8Vzw {
+    font-size: 0.9rem; /* Further reduce paragraph size */
+  }
+
+  .contact-hero-section_contact_hero_section__item__icon__lE8YU img {
+    width: 25px;
+    height: 25px;
+  }
+}
 
     
   </style>
@@ -430,7 +486,7 @@
                                      </div>
                                      </div>
                                         <br><br>
-                                            <div class="our-values-section_values_list__zyn6C" style="width: 100%;">
+                                             <div class="our-values-section_values_list__zyn6C" style="width: 100%;">
                                                 <div class="our-values-section_values_list__item__dv_1N" >
                                                     <div class="our-values-section_values_list__icon__7toO3"><img alt="Communication" style="color:transparent" src="images/graphic-design.png" class="animate__animated block" data-animation="animate__flipInY"></div>
                                                         <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Design</h4>
@@ -448,8 +504,8 @@
                                                         <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Deliver</h4>
                                                         <p class="our-values-section_values_list__description__cwHMl animate__animated block Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
                                                     </div>
-                                            </div>
-                                                 <section class="contact-hero-section_contact_hero_section__0BuD_">
+                                            </div> 
+                                                  <section class="contact-hero-section_contact_hero_section__0BuD_" style="margin-top: 100px;">
                                                     <div class="contact-hero-section_contact_hero_section__container__fLSHT">
                                                         <div class="contact-hero-section_contact_hero_section__inner__paQwr">
                                                             <section
@@ -476,7 +532,7 @@
                                     
                                                                         </p>
                                                                     </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT" style="width: 100%;">Read More</button>
+                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT" style="width: 100%; margin-top: 30px;">Read More</button>
                                                                 </div>
                                                             </section>
                                                         </div>
@@ -507,7 +563,7 @@
                                                                         <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our React native cross platform mobile app development team builds secure, cross platform combatible and scalable React Native mobile…
                                                                         </p>
                                                                     </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT" style="width: 100%;">Read More</button>
+                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT" style="width: 100%; margin-top: 20px;">Read More</button>
                                                                 </div>
                                                             </section>
                                                         </div>
@@ -558,9 +614,9 @@
                 <div class="footer_footer__nav_inner__container___04Dt">
                     <p class="footer_footer__nav_inner__title__yT5Lh">What we do</p>
                     <ul class="footer_footer__nav_inner__links__i_g9U">
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="frontenddevelopment.html">Front end Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="webdevelopment.html">Web Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="mobileappdevelopment.html">Mobile App Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Front end Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Web Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Mobile App Development</a></li>
                         <li><a
                                 class="footer_footer__nav_inner__link__AwoCU " href="whyus.html">Why Us</a></li>
                     </ul>

@@ -157,6 +157,9 @@
     height: 25px;
   }
 }
+html {
+    scroll-behavior: smooth;
+}
 
     
   </style>
@@ -176,7 +179,14 @@
             </div>
             <ul class="nav-links nav-test-ul" style="z-index: 12000; ">
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="services.html" class="active">Services</a></li>
+                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
+                    <a href="#" class="active">Services</a>
+                    <ul class="dropdown dropdown-mobile">
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#frontend-development">Front End Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#web-development">Web Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#mobile-app-development">Mobile App Development</a></li>
+                    </ul>
+                </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
@@ -194,7 +204,7 @@
     <main class="layout_layout__inner__Ln18k">
             <div class="about_about__container__sB1fI">
                 <div class="about_about__container__sB1fI">
-                    <section class="info-secondary-section_info_secondary__8__UJ">
+                    <section class="info-secondary-section_info_secondary__8__UJ" style="margin-top: -100px;">
                       <div class="info-secondary-section_info_secondary__container__t4gVs">
                         <div class="info-secondary-section_info_secondary__inner___HERp">
                           <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown">
@@ -242,344 +252,347 @@
                 
                   <!-- Recomandation -->
                   <!-- FrontEnd Development -->
-                   <div class="about_about__valuesContainer__1wFcz">
-                    <section class="global-container">
-                        <div class="our-values-section_our_values_section__7US1j">
-                            <div class="our-values-section_values_list__zyn6C">
-                                <div class="grey-container" >
-                                    <div class="our-services-container">
-                                        <div class="title-wrapper">
-                                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
-                                                <p><strong>Front End Development</strong></p>
-                                              </h2>
+                   <section id="frontend-development">
+                    <div class="about_about__valuesContainer__1wFcz">
+                        <section class="global-container">
+                            <div class="our-values-section_our_values_section__7US1j">
+                                <div class="our-values-section_values_list__zyn6C">
+                                    <div class="grey-container" >
+                                        <div class="our-services-container">
+                                            <div class="title-wrapper">
+                                                <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
+                                                    <p><strong>Front End Development</strong></p>
+                                                  </h2>
+                                            </div>
+        
+                                          </div>
+                                          <p class="block animate__animated Description-font" data-animation="animate__fadeInUp" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
+                                            Because you and your offer are unique, we will select the perfect framework for your needs—even going out off our way to use and test multiple frameworks to find which one is a best fit for you. These frameworks provide intuitive clean code so your site is more responsive.
+                                        </p><br><br>
+                                          <div class="card-container">
+                                            <div class="card">
+                                                <div class="card-image animate__animated block" data-animation="animate__flipInY">
+                                                    <img src="images/angular-back.png" alt="AngularJS Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>AngularJS</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">AngularJS, an open-source app mostly maintained by Google and other communities. Used on the websites of Wolfram Alpha, NBC, Walgreens, Intel, Sprint, ABC News, and thousands of others, this framework was created in response to some of the challenges encountered in developing single-page applications.</p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card">
+                                                <div class="card-image block animate__animated" data-animation="animate__flipInY">
+                                                    <img src="images/react-back.png" alt="ReactJS Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>ReactJS</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">ReactJS is favored when developers need to create large web applications that can change over time. It’s a fast, simple, and scalable framework used by Netflix, Walmart, Airbnb, Imgur, and others.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card">
+                                                <div class="card-image block animate__animated" data-animation="animate__flipInY">
+                                                    <img src="images/jqery-back.png" alt="jQuery Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>jQuery</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">JQuery’s goal is to make user experience simpler. Whether managing events, selecting DOM elements, navigating a document, or crafting animations, jQuery is a capable and effective too. Microsoft and Nokia bundle jQuery on their platforms.</p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card">
+                                                <div class="card-image animate__animated block" data-animation="animate__flipInY">
+                                                    <img src="images/d3js.png" alt="D3 Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>D3</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> D3.js stands for Data-Driven-Documents. It’s s a framework for the production of interactive data visualizations in web browsers. It’s useful when rich graphics are necessary—for example, the New York Times often uses it for web content.</p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card">
+                                                <div class="card-image block animate__animated" data-animation="animate__flipInY">
+                                                    <img src="images/node-back.png" alt="Node.js Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>Node.js</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">Node.js helps produce dynamic web content and allows web app development to unify around a single programming language instead of needing to use many different languages for writing server scripts. Recognizable users of Node.js are IBM, GoDaddy, Groupon, LinkedIn, Microsoft, Netflix, and Walmart.</p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="card">
+                                                <div class="card-image animate__animated block" data-animation="animate__flipInY">
+                                                    <img src="images/vue.png" alt="VueJS Logo">
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                        <strong>VueJS</strong>
+                                                    </h4>
+                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Vue.js is an open-source progressive framework designed for ease of adoption in building user interfaces. It is currently the most starred project in GitHub.</p>
+                                                </div>
+                                            </div>
                                         </div>
-    
-                                      </div>
-                                      <p class="block animate__animated Description-font" data-animation="animate__fadeInUp" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
-                                        Because you and your offer are unique, we will select the perfect framework for your needs—even going out off our way to use and test multiple frameworks to find which one is a best fit for you. These frameworks provide intuitive clean code so your site is more responsive.
-                                    </p><br><br>
-                                      <div class="card-container">
-                                        <div class="card">
-                                            <div class="card-image animate__animated block" data-animation="animate__flipInY">
-                                                <img src="images/angular-back.png" alt="AngularJS Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>AngularJS</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">AngularJS, an open-source app mostly maintained by Google and other communities. Used on the websites of Wolfram Alpha, NBC, Walgreens, Intel, Sprint, ABC News, and thousands of others, this framework was created in response to some of the challenges encountered in developing single-page applications.</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="card">
-                                            <div class="card-image block animate__animated" data-animation="animate__flipInY">
-                                                <img src="images/react-back.png" alt="ReactJS Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>ReactJS</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">ReactJS is favored when developers need to create large web applications that can change over time. It’s a fast, simple, and scalable framework used by Netflix, Walmart, Airbnb, Imgur, and others.
-                                                </p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="card">
-                                            <div class="card-image block animate__animated" data-animation="animate__flipInY">
-                                                <img src="images/jqery-back.png" alt="jQuery Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>jQuery</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">JQuery’s goal is to make user experience simpler. Whether managing events, selecting DOM elements, navigating a document, or crafting animations, jQuery is a capable and effective too. Microsoft and Nokia bundle jQuery on their platforms.</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="card">
-                                            <div class="card-image animate__animated block" data-animation="animate__flipInY">
-                                                <img src="images/d3js.png" alt="D3 Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>D3</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> D3.js stands for Data-Driven-Documents. It’s s a framework for the production of interactive data visualizations in web browsers. It’s useful when rich graphics are necessary—for example, the New York Times often uses it for web content.</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="card">
-                                            <div class="card-image block animate__animated" data-animation="animate__flipInY">
-                                                <img src="images/node-back.png" alt="Node.js Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>Node.js</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;">Node.js helps produce dynamic web content and allows web app development to unify around a single programming language instead of needing to use many different languages for writing server scripts. Recognizable users of Node.js are IBM, GoDaddy, Groupon, LinkedIn, Microsoft, Netflix, and Walmart.</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="card">
-                                            <div class="card-image animate__animated block" data-animation="animate__flipInY">
-                                                <img src="images/vue.png" alt="VueJS Logo">
-                                            </div>
-                                            <div class="card-content">
-                                                <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                    <strong>VueJS</strong>
-                                                </h4>
-                                                <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Vue.js is an open-source progressive framework designed for ease of adoption in building user interfaces. It is currently the most starred project in GitHub.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   </div>
-                                   </div>
+                                       </div>
+                                       </div>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                </div>
+                        </section>
+                    </div>
+                   </section>
                 <!-- FrontEnd Development -->
                 <!-- Web Development -->
-
-                 <div class="about_about__valuesContainer__1wFcz">
-                    <section class="global-container">
-                        <div class="our-values-section_our_values_section__7US1j">
-                            <div class="our-values-section_values_list__zyn6C">
-                                <div class="grey-container" >
-                                    <div class="our-services-container">
-                                        <div class="title-wrapper">
-                                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
-                                                <p><strong>Web Development</strong></p>
-                                              </h2>
-                                        </div>
-    
-                                      </div>
-                                      <p class="block animate__animated Description-font" data-animation="animate__fadeInUp" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
-                                        Because you and your offer are unique, we will select the perfect framework for your needs—even going out off our way to use and test multiple frameworks to find which one is a best fit for you. These frameworks provide intuitive clean code so your site is more responsive.
-                                    </p><br><br>
-                                    <div class="dev-process__wrapper " data-animation="">
-                                        <div class="dev-process__column">
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>CMS based Websites</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Our developers have experience building websites for almost every industry and on almost every platform including WordPress, Drupal and Joomla.</p>
+                   <section id="web-development">
+                    <div class="about_about__valuesContainer__1wFcz">
+                        <section class="global-container">
+                            <div class="our-values-section_our_values_section__7US1j">
+                                <div class="our-values-section_values_list__zyn6C">
+                                    <div class="grey-container" >
+                                        <div class="our-services-container">
+                                            <div class="title-wrapper">
+                                                <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
+                                                    <p><strong>Web Development</strong></p>
+                                                  </h2>
+                                            </div>
+        
+                                          </div>
+                                          <p class="block animate__animated Description-font" data-animation="animate__fadeInUp" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
+                                            Because you and your offer are unique, we will select the perfect framework for your needs—even going out off our way to use and test multiple frameworks to find which one is a best fit for you. These frameworks provide intuitive clean code so your site is more responsive.
+                                        </p><br><br>
+                                        <div class="dev-process__wrapper " data-animation="">
+                                            <div class="dev-process__column">
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>CMS based Websites</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Our developers have experience building websites for almost every industry and on almost every platform including WordPress, Drupal and Joomla.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>ECommerce Applications</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> If you have a store or need new one, we can surely help you with the same. We can create a store for you from scratch or, leverage popular platforms such as WooCommerce, Shopify or Magento.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>API Development and Documentation</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We can help you if you need to build or, consume an API. Our teams have worked with all sort of APIs including Voice, Video, Payment, Cloud, Accounting etc.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>Website Rescue and Optimisation</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Is your website hacked or running slow? Our cross sectional team of developers and hosting experts can help rescue it and prevent further issues.</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>ECommerce Applications</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> If you have a store or need new one, we can surely help you with the same. We can create a store for you from scratch or, leverage popular platforms such as WooCommerce, Shopify or Magento.</p>
+                                            <div class="dev-process__column">
+                                                <div class="process-scheme">
+                                                    <img class="backgrond-image animate__animated block" data-animation="animate__fadeIn" alt="process" src="images/web-back.png" style="margin-top: 30%;"/>
                                                 </div>
                                             </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>API Development and Documentation</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We can help you if you need to build or, consume an API. Our teams have worked with all sort of APIs including Voice, Video, Payment, Cloud, Accounting etc.</p>
+                                            <div class="dev-process__column">
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>Web Applications</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We have built all sorts of web-applications from online forms, workflows to whole management systems. We work on projects both big and small.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>Software Development</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Our engineering team has a lot of experience in developing complex web based business systems with multiple users and roles and that connect with CRM, Accounting, Inventory and Other Systems.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>Fixing Bugs and Issues</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We can fix any bugs or issues on your website. We have an experienced team of web developers, web designers, and support personnel to help you with any website or web application problem.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dev-process__column-item">
+                                                    <div class="dev-process-image">
+                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
+                                                            <strong>Business Automation</strong>
+                                                        </h4>
+                                                        <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Do you have a manual process that you need to automate? Our team can develop a customised, secure and scalable system as per your business needs.</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>Website Rescue and Optimisation</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Is your website hacked or running slow? Our cross sectional team of developers and hosting experts can help rescue it and prevent further issues.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dev-process__column">
-                                            <div class="process-scheme">
-                                                <img class="backgrond-image animate__animated block" data-animation="animate__fadeIn" alt="process" src="images/web-back.png" style="margin-top: 30%;"/>
-                                            </div>
-                                        </div>
-                                        <div class="dev-process__column">
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>Web Applications</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We have built all sorts of web-applications from online forms, workflows to whole management systems. We work on projects both big and small.</p>
-                                                </div>
-                                            </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>Software Development</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Our engineering team has a lot of experience in developing complex web based business systems with multiple users and roles and that connect with CRM, Accounting, Inventory and Other Systems.</p>
-                                                </div>
-                                            </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>Fixing Bugs and Issues</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> We can fix any bugs or issues on your website. We have an experienced team of web developers, web designers, and support personnel to help you with any website or web application problem.</p>
-                                                </div>
-                                            </div>
-                                            <div class="dev-process__column-item">
-                                                <div class="dev-process-image">
-                                                    <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown" style="font-size: larger; text-align: left; text-align: center;">
-                                                        <strong>Business Automation</strong>
-                                                    </h4>
-                                                    <p  data-animation="animate__fadeInUp"  class="block animate__animated our-values-section_values_list__description__cwHMl Description-font" style="font-size: 15px;"> Do you have a manual process that you need to automate? Our team can develop a customised, secure and scalable system as per your business needs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                   </div>
+                                        </div>   
+                                       </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div> 
+                        </section>
+                    </div> 
+                   </section>
                 <!-- Web Development -->
                 <!-- Mobile App Development -->
-
-                 <div class="about_about__valuesContainer__1wFcz">
-                    <section class="global-container">
-                        <div class="our-values-section_our_values_section__7US1j">
-                            <div class="our-values-section_values_list__zyn6C">
-                                <div class="grey-container" >
-                                    <div class="our-services-container">
-                                        <div class="title-wrapper">
-                                            <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
-                                                <p><strong>Mobile App Development</strong></p>
-                                              </h2>
-                                        </div>
+                 <section id="mobile-app-development">
+                    <div class="about_about__valuesContainer__1wFcz">
+                        <section class="global-container">
+                            <div class="our-values-section_our_values_section__7US1j">
+                                <div class="our-values-section_values_list__zyn6C">
+                                    <div class="grey-container" >
+                                        <div class="our-services-container">
+                                            <div class="title-wrapper">
+                                                <h2 class="global-title _secondary info-secondary-section_info_secondary__inner__title__OYij1 block animate__animated" data-animation="animate__fadeInDown" style="margin-top: -100px;">
+                                                    <p><strong>Mobile App Development</strong></p>
+                                                  </h2>
+                                            </div>
+                                            
+                                          </div class="our-approach_our_approach__inner__list__kc1qr block animate__animated">
+                                          <p class="block animate__animated Description-font" data-animation="animate__fadeInLeft" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
+                                            If you’re serious about getting apps to improve the way your business operates, or launching high-end and beautiful mobile apps for iOS and Android, then you should know that there’s only one place you can get a dedicated team of skilled developers working exclusively on your vision: right here at Torque Software .
+                                         </p>
+                                         <div><br>
+                                            <div class="our-approach_our_approach__inner__list__kc1qr block animate__animated" data-animation="animate__backInRight" style="text-align: left; ">
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
+                                                        <path fill="#515151"
+                                                            d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
+                                                        </path>
+                                                    </svg>We work with you and your team on planning and strategy
+                                                </p>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
+                                                        <path fill="#515151"
+                                                            d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
+                                                        </path>
+                                                    </svg>We have hands on experience with both native and hybrid mobile apps.
+                                                </p>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
+                                                        <path fill="#515151"
+                                                            d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
+                                                        </path>
+                                                    </svg>We help you drive customer engagement and sales by building applications for purchase on the Apple and Google app stores
+                                                </p>
+                                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
+                                                        <path fill="#515151"
+                                                            d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
+                                                        </path>
+                                                    </svg>We custom-build, design, and deploy an enterprise app you can use to streamline and mobilize your inward-facing systems.
+                                                </p>
+                                         </div>
+                                         </div>
+                                            <br><br>
+                                                 <div class="our-values-section_values_list__zyn6C" style="width: 100%;">
+                                                    <div class="our-values-section_values_list__item__dv_1N" >
+                                                        <div class="our-values-section_values_list__icon__7toO3"><img alt="Communication" style="color:transparent" src="images/graphic-design.png" class="animate__animated block" data-animation="animate__flipInY"></div>
+                                                            <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Design</h4>
+                                                            <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We design the first class apps that bring customers to your brand and keep them their for life.</p>
+                                                        <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE"></div>     
+                                                    </div>
+                                                    <div class="our-values-section_values_list__item__dv_1N" >
+                                                        <div class="our-values-section_values_list__icon__7toO3"><img alt="User-Centered Focus"style="color:transparent" src="images/graphic-develop.png" class="block animate__animated" data-animation="animate__flipInY"></div>
+                                                            <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Develop</h4>
+                                                            <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We develop sophisticated, highly functional apps that work for you, and work for your customers just as well.</p>                     
+                                                        </div>
+                                                            
+                                                    <div class="our-values-section_values_list__item__dv_1N" >
+                                                        <div class="our-values-section_values_list__icon__7toO3"><img alt="Innovation" src="images/graphic-deliver.png" class="animate__animated block" data-animation="animate__flipInY"></div>
+                                                            <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Deliver</h4>
+                                                            <p class="our-values-section_values_list__description__cwHMl animate__animated block Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
+                                                        </div>
+                                                </div> 
+                                                </div></div></div>
+                                                <br>
+                                                      <section class="contact-hero-section_contact_hero_section__0BuD_" style="margin-top: 100px;">
+                                                        <div class="contact-hero-section_contact_hero_section__container__fLSHT">
+                                                            <div class="contact-hero-section_contact_hero_section__inner__paQwr">
+                                                                <section
+                                                                    class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
                                         
-                                      </div class="our-approach_our_approach__inner__list__kc1qr block animate__animated">
-                                      <p class="block animate__animated Description-font" data-animation="animate__fadeInLeft" style="font-size: 20px; text-align: left; text-align: center; margin-top: -120px;">
-                                        If you’re serious about getting apps to improve the way your business operates, or launching high-end and beautiful mobile apps for iOS and Android, then you should know that there’s only one place you can get a dedicated team of skilled developers working exclusively on your vision: right here at Torque Software .
-                                     </p>
-                                     <div><br>
-                                        <div class="our-approach_our_approach__inner__list__kc1qr block animate__animated" data-animation="animate__backInRight" style="text-align: left; ">
-                                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                                    <path fill="#515151"
-                                                        d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                                    </path>
-                                                </svg>We work with you and your team on planning and strategy
-                                            </p>
-                                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                                    <path fill="#515151"
-                                                        d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                                    </path>
-                                                </svg>We have hands on experience with both native and hybrid mobile apps.
-                                            </p>
-                                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                                    <path fill="#515151"
-                                                        d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                                    </path>
-                                                </svg>We help you drive customer engagement and sales by building applications for purchase on the Apple and Google app stores
-                                            </p>
-                                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="none">
-                                                    <path fill="#515151"
-                                                        d="M15.428 9.5c0 .622-.512 1.125-1.143 1.125H9.142v5.063c0 .622-.512 1.124-1.143 1.124a1.133 1.133 0 0 1-1.143-1.124v-5.063H1.713A1.134 1.134 0 0 1 .57 9.5c0-.622.512-1.125 1.143-1.125h5.143V3.313c0-.622.512-1.126 1.143-1.126s1.143.504 1.143 1.126v5.062h5.143c.632 0 1.143.503 1.143 1.125">
-                                                    </path>
-                                                </svg>We custom-build, design, and deploy an enterprise app you can use to streamline and mobilize your inward-facing systems.
-                                            </p>
-                                     </div>
-                                     </div>
-                                        <br><br>
-                                             <div class="our-values-section_values_list__zyn6C" style="width: 100%;">
-                                                <div class="our-values-section_values_list__item__dv_1N" >
-                                                    <div class="our-values-section_values_list__icon__7toO3"><img alt="Communication" style="color:transparent" src="images/graphic-design.png" class="animate__animated block" data-animation="animate__flipInY"></div>
-                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Design</h4>
-                                                        <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We design the first class apps that bring customers to your brand and keep them their for life.</p>
-                                                    <div class="global-subtitle info-secondary-section_info_secondary__inner__subtitle__8HjlE"></div>     
-                                                </div>
-                                                <div class="our-values-section_values_list__item__dv_1N" >
-                                                    <div class="our-values-section_values_list__icon__7toO3"><img alt="User-Centered Focus"style="color:transparent" src="images/graphic-develop.png" class="block animate__animated" data-animation="animate__flipInY"></div>
-                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Develop</h4>
-                                                        <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We develop sophisticated, highly functional apps that work for you, and work for your customers just as well.</p>                     
-                                                    </div>
-                                                        
-                                                <div class="our-values-section_values_list__item__dv_1N" >
-                                                    <div class="our-values-section_values_list__icon__7toO3"><img alt="Innovation" src="images/graphic-deliver.png" class="animate__animated block" data-animation="animate__flipInY"></div>
-                                                        <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">Deliver</h4>
-                                                        <p class="our-values-section_values_list__description__cwHMl animate__animated block Description-font" data-animation="animate__fadeInUp" style="text-align: left;">We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
-                                                    </div>
-                                            </div> 
-                                            </div></div></div>
-                                            <br>
-                                                  <section class="contact-hero-section_contact_hero_section__0BuD_" style="margin-top: 100px;">
-                                                    <div class="contact-hero-section_contact_hero_section__container__fLSHT">
-                                                        <div class="contact-hero-section_contact_hero_section__inner__paQwr">
-                                                            <section
-                                                                class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
-                                    
-                                                                <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
-                                                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
-                                                                            alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
-                                                                            data-nimg="1" style="color:transparent" src="images/graphic-native-1.png"></div>
-                                                                    <div>
-                                                                        <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">iOS/iPhone APP Development
-                                                                        </h3>
-                                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our mobile app development team has created 230+ feature rich iOS and iWatch apps. Our clients can avail end-to-end iPhone app development gradation/migration…
-                                                                        </p>
-                                                                    </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
-                                                                </div>
-                                                                <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
-                                                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
-                                                                            alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
-                                                                            data-nimg="1" style="color:transparent" src="images/graphic-native-2.png"></div>
-                                                                    <div>
-                                                                        <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">Xamarin App Development
-                                                                        </h3>
-                                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our mobile app development team provides cross platform solutions using advanced features of Xamarin. Our clients can avail Xamarin app design & development…
-                                                                        </p>
-                                                                    </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
-                                                                </div>
-                                                            </section>
+                                                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
+                                                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
+                                                                                alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
+                                                                                data-nimg="1" style="color:transparent" src="images/graphic-native-1.png"></div>
+                                                                        <div>
+                                                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">iOS/iPhone APP Development
+                                                                            </h3>
+                                                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our mobile app development team has created 230+ feature rich iOS and iWatch apps. Our clients can avail end-to-end iPhone app development gradation/migration…
+                                                                            </p>
+                                                                        </div><button onclick="window.location.href='contact.html';"
+                                                                            class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
+                                                                    </div>
+                                                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
+                                                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
+                                                                                alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
+                                                                                data-nimg="1" style="color:transparent" src="images/graphic-native-2.png"></div>
+                                                                        <div>
+                                                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">Xamarin App Development
+                                                                            </h3>
+                                                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our mobile app development team provides cross platform solutions using advanced features of Xamarin. Our clients can avail Xamarin app design & development…
+                                                                            </p>
+                                                                        </div><button onclick="window.location.href='contact.html';"
+                                                                            class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                            <br><br><br>
+                                                            <div class="contact-hero-section_contact_hero_section__inner__paQwr">
+                                                                <section
+                                                                    class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
+                                        
+                                                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
+                                                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
+                                                                                alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
+                                                                                data-nimg="1" style="color:transparent" src="images/graphic-native-2.png"></div>
+                                                                        <div>
+                                                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">Android App Development
+                                                                            </h3>
+                                                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our offshore mobile app development company has created 300+ Android apps which are being used by millions of users. We provide end-to-end android app development…
+                                                                            </p>
+                                                                        </div><button onclick="window.location.href='contact.html';"
+                                                                            class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
+                                                                    </div>
+                                                                    <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
+                                                                        <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
+                                                                                alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
+                                                                                data-nimg="1" style="color:transparent" src="images/graphic-cross-2.png"></div>
+                                                                        <div>
+                                                                            <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K"> React Native App Development
+                                                                            </h3>
+                                                                            <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our React native cross platform mobile app development team builds secure, cross platform combatible and scalable React Native mobile…
+                                                                            </p>
+                                                                        </div><button onclick="window.location.href='contact.html';"
+                                                                            class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%; margin-top: 20px;">Read More</button>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
                                                         </div>
-                                                        <br><br><br>
-                                                        <div class="contact-hero-section_contact_hero_section__inner__paQwr">
-                                                            <section
-                                                                class="global-header-width-container contact-hero-section_contact_hero_section__top__zT3rt">
-                                    
-                                                                <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
-                                                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
-                                                                            alt="Schedule a timeslot" loading="lazy" width="40" height="40" decoding="async"
-                                                                            data-nimg="1" style="color:transparent" src="images/graphic-native-2.png"></div>
-                                                                    <div>
-                                                                        <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K">Android App Development
-                                                                        </h3>
-                                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our offshore mobile app development company has created 300+ Android apps which are being used by millions of users. We provide end-to-end android app development…
-                                                                        </p>
-                                                                    </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%;">Read More</button>
-                                                                </div>
-                                                                <div class="contact-hero-section_contact_hero_section__item__z_u0o block animate__animated" data-animation="animate__fadeInDown">
-                                                                    <div class="contact-hero-section_contact_hero_section__item__icon__lE8YU img-block"><img 
-                                                                            alt="Write to us" loading="lazy" width="40" height="40" decoding="async"
-                                                                            data-nimg="1" style="color:transparent" src="images/graphic-cross-2.png"></div>
-                                                                    <div>
-                                                                        <h3 class="contact-hero-section_contact_hero_section__item__title__2jz8K"> React Native App Development
-                                                                        </h3>
-                                                                        <p class="contact-hero-section_contact_hero_section__item__paragraph__P8Vzw Description-font">Our React native cross platform mobile app development team builds secure, cross platform combatible and scalable React Native mobile…
-                                                                        </p>
-                                                                    </div><button onclick="window.location.href='contact.html';"
-                                                                        class="contact-hero-section_contact_hero_section__item__btn__hYCHT btn-font-size" style="width: 100%; margin-top: 20px;">Read More</button>
-                                                                </div>
-                                                            </section>
-                                                        </div>
-                                                    </div>
-                                                </section> 
-                                            <br><br><br><br><br>
-                                   </div>
+                                                    </section> 
+                                                <br><br><br><br><br>
+                                       </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div> 
-
+                        </section>
+                    </div> 
+                 </section>
                 <!-- Mobile App development -->
             <div class="about_about__callContainer__mtc7C" style="margin-top: 30px;">
                 <section class="schedule-call_schedule_call__T0597">
@@ -617,9 +630,9 @@
                 <div class="footer_footer__nav_inner__container___04Dt">
                     <p class="footer_footer__nav_inner__title__yT5Lh">What we do</p>
                     <ul class="footer_footer__nav_inner__links__i_g9U">
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Front end Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Web Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Mobile App Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#frontend-development">Front end Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#web-development">Web Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#mobile-app-development">Mobile App Development</a></li>
                         <li><a
                                 class="footer_footer__nav_inner__link__AwoCU " href="whyus.html">Why Us</a></li>
                     </ul>
@@ -707,6 +720,17 @@
             observer.observe(block);
           });
         });
+      </script>
+      <script>
+        window.addEventListener('hashchange', function() {
+        const element = document.querySelector(location.hash);
+        if (element) {
+            const yOffset = -90; // Adjust this based on the height of your sticky header
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    });
+
       </script>
 </body>
 

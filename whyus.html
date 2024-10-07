@@ -118,7 +118,14 @@
             </div>
             <ul class="nav-links nav-test-ul" style="z-index: 12000; ">
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="services.html">Services</a></li>
+                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
+                  <a href="#">Services</a>
+                  <ul class="dropdown dropdown-mobile">
+                      <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#frontend-development">Front End Development</a></li>
+                      <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#web-development">Web Development</a></li>
+                      <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#mobile-app-development">Mobile App Development</a></li>
+                  </ul>
+                </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html" class="active">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
@@ -216,6 +223,7 @@
                                 <p class="global-under-title schedule-call_schedule_call__inner__undertitle__R72JM">
                                 </p>
                                 <img src="images/experts-on-call.png" alt="" class="block animate__animated" data-animation="animate__fadeInDown">
+                                <br>
                                 <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">
                                   <strong>Experts on call</strong></h4>
                                   <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: center;">
@@ -232,6 +240,7 @@
                             <div class="schedule-call_schedule_call__inner__ZjUkj">
                                 <p class="global-under-title schedule-call_schedule_call__inner__undertitle__R72JM">
                                 </p><img src="images/suctom-team-building.png" alt="" class="block animate__animated" data-animation="animate__fadeInDown">
+                                <br>
                                 <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">
                                   <strong>Custom team building</strong></h4>
                                   <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: center;">
@@ -249,6 +258,7 @@
                                 <p class="global-under-title schedule-call_schedule_call__inner__undertitle__R72JM">
                                 </p>
                                 <img src="images/quality-gurantee.png" alt="" class="block animate__animated" data-animation="animate__fadeInDown">
+                                <br>
                                 <h4 class="our-values-section_values_list__title__sJ7Bn block animate__animated" data-animation="animate__fadeInDown">
                                   <strong>Custom team building</strong></h4>
                                   <p class="our-values-section_values_list__description__cwHMl block animate__animated Description-font" data-animation="animate__fadeInUp" style="text-align: center;">
@@ -299,9 +309,9 @@
                         <div class="footer_footer__nav_inner__container___04Dt">
                             <p class="footer_footer__nav_inner__title__yT5Lh">What we do</p>
                             <ul class="footer_footer__nav_inner__links__i_g9U">
-                                <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Front end Development</a></li>
-                                <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Web Development</a></li>
-                                <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Mobile App Development</a></li>
+                              <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#frontend-development">Front end Development</a></li>
+                              <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#web-development">Web Development</a></li>
+                              <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#mobile-app-development">Mobile App Development</a></li>
                                 <li><a
                                         class="footer_footer__nav_inner__link__AwoCU " href="whyus.html">Why Us</a></li>
                             </ul>
@@ -401,6 +411,15 @@
                     });
                 });
               </script>
+              <script>
+                window.addEventListener('hashchange', function() {
+                const element = document.querySelector(location.hash);
+                if (element) {
+                    const yOffset = -90; // Adjust this based on the height of your sticky header
+                    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            });
+              </script>
 </body>
-
 </html>

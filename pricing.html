@@ -50,7 +50,14 @@
             </div>
             <ul class="nav-links nav-test-ul" style="z-index: 12000; ">
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
-                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="services.html">Services</a></li>
+                <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown dropdown-mobile">
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#frontend-development">Front End Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#web-development">Web Development</a></li>
+                        <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#mobile-app-development">Mobile App Development</a></li>
+                    </ul>
+                </li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="whyus.html">Why Us</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="pricing.html" class="active">Pricing</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="about.html">About Us</a></li>
@@ -95,7 +102,7 @@
       </div>
     <!-- about -->
     <!-- pricing main -->
-    <main class="layout_layout__inner__Ln18k">
+    <main class="layout_layout__inner__Ln18k" style="margin-top: -50px;">
             <div class="about_about__valuesContainer__1wFcz">
                 <section class="global-container">
                     <div class="our-values-section_our_values_section__7US1j">
@@ -312,9 +319,9 @@
                 <div class="footer_footer__nav_inner__container___04Dt">
                     <p class="footer_footer__nav_inner__title__yT5Lh">What we do</p>
                     <ul class="footer_footer__nav_inner__links__i_g9U">
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Front end Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Web Development</a></li>
-                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html">Mobile App Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#frontend-development">Front end Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#web-development">Web Development</a></li>
+                        <li><a class="footer_footer__nav_inner__link__AwoCU " href="services.html#mobile-app-development">Mobile App Development</a></li>
                         <li><a
                                 class="footer_footer__nav_inner__link__AwoCU " href="whyus.html">Why Us</a></li>
                     </ul>
@@ -402,6 +409,17 @@
             observer.observe(block);
           });
         });
+      </script>
+      <script>
+        window.addEventListener('hashchange', function() {
+        const element = document.querySelector(location.hash);
+        if (element) {
+            const yOffset = -90; // Adjust this based on the height of your sticky header
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    });
+
       </script>
 </body>
 

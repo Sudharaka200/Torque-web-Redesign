@@ -182,6 +182,13 @@ button:hover {
 @media (max-width:1375px) {
     .contact-btn-margin{margin-top: 50px;}
 }
+textarea::placeholder {
+    font-family: 'CustomFont', sans-serif; 
+    
+}
+input ::placeholder{
+  font-family: 'CustomFont', sans-serif;
+}
   </style>
 </head>
 
@@ -200,7 +207,7 @@ button:hover {
             <ul class="nav-links nav-test-ul" style="z-index: 12000; ">
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown"><a href="index.html">Home</a></li>
                 <li class="header_header__links__link__GHE7N nav-test-li animate__animated animate__fadeInDown">
-                  <a href="#">Services</a>
+                  <a href="services.html">Services</a>
                   <ul class="dropdown dropdown-mobile">
                       <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#frontend-development">Front End Development</a></li>
                       <li class="header_header__links__link__GHE7N nav-test-li" style="list-style: none;"><a href="services.html#web-development">Web Development</a></li>
@@ -258,10 +265,10 @@ button:hover {
                                             <input type="tel" placeholder="Mobile number" required>
                                             <input type="text" placeholder="Company name">
                                         </div>
-                                        <div class="input-group">
+                                        <div class="input-group" aria-placeholder="Message/requirements *">
                                             <textarea placeholder="Message/requirements *" required></textarea>
                                         </div>
-                                        <button type="submit">Send your request</button>
+                                        <button type="submit">Submit</button>
                                     </form>
                                 </div>
                                 <!-- form -->
